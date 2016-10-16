@@ -2,7 +2,7 @@
 學習機器學習的 domain knowledge, 對於使用技術指標仍未突破, 尋求其他方式 ([機器學習](https://www.gitbook.com/book/captainvincent/machine-learning-foundations/details)) 來分析技術指標的意涵。
 
 # Book Link
-[電子書閱讀連結](https://www.gitbook.com/book/captainvincent/mt4-cooking-book/details) (GitBook)
+[電子書閱讀連結](https://www.gitbook.com/book/captainvincent/reactnative/details) (GitBook)
 
 # 寫在最前面
 撰寫這本書的初衷, 其實是想作為筆者在追尋交易聖杯的過程中, 所留下的技術做整理, 身為專業 (~~阿宅~~) 工程師, 思考如何運用自動化交易的方式搭配技術分析, 從叢林中找到一些生存的希望, 然而這一切也只是開始。
