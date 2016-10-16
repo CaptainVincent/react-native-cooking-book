@@ -2,7 +2,7 @@
 [電子書閱讀連結](https://www.gitbook.com/book/captainvincent/reactnative/details) (GitBook)
 
 # 寫在最前面
-
+筆者目前有興趣在的語言
 
 ## 參考文獻
 O'Reilly React Native 學習手冊
