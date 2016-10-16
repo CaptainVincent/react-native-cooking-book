@@ -2,7 +2,7 @@
 [電子書閱讀連結](https://www.gitbook.com/book/captainvincent/reactnative/details) (GitBook)
 
 # 寫在最前面
-筆者目前感興趣的是 Python、JavaScript 兩者的學習, 學習一套程式語言最佳的方式就是從目前當紅流行的應用來切入,
+過去筆者主要使用的程式語言一直是以 C、C++ 為主, 但目前較感興趣的重心是放在 Python、JavaScript 兩者的學習, 學習一套程式語言最佳的方式就是從目前當紅流行的應用來切入,
 
 ## 參考文獻
 O'Reilly React Native 學習手冊
