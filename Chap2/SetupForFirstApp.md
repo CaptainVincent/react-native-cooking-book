@@ -18,4 +18,5 @@ npm install -g react-native-cli
 
 ## Android 相依
 * 安裝 JDK (Java Development Kit)
-* 安裝 Android SDK
+* 安裝 Android SDK `brew install android-sdk`
+* export ANDROID_HOME 的路徑
