@@ -5,13 +5,13 @@
 react-native init FirstProject
 ```
 
-產生玩的目錄結構
+產生的目錄結構
 ```
 ./
 |-- __tests__
 |   |-- index.android.js
 |   `-- index.ios.js
-|-- android
+|-- android // About Android platform template
 |   |-- app
 |   |-- build.gradle
 |   |-- gradle
@@ -20,9 +20,9 @@ react-native init FirstProject
 |   |-- gradlew.bat
 |   |-- keystores
 |   `-- settings.gradle
-|-- index.android.js
-|-- index.ios.js
-|-- ios
+|-- index.android.js //React code
+|-- index.ios.js //React code
+|-- ios // About iOS platform template
 |   |-- FirstProject
 |   |-- FirstProject.xcodeproj
 |   `-- FirstProjectTests
