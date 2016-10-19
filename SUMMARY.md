@@ -5,5 +5,5 @@
 * [使用 React Native](Chap2/StartUseReactNative.md)
    * [Virtual DOM](Chap2/VirtualDOM.md)
    * [Setup Environment](Chap2/SetupForFirstApp.md)
-   * [創建新的程式](CreateNewApp)
+   * [創建新的程式](Chap2/CreateNewApp.md)
 
