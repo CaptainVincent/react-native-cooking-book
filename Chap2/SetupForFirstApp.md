@@ -1,5 +1,5 @@
 # Setup Environment
-在開始寫第一支程式前, 我們還是需要先來做開發環境的設定, 這邊以 Mac 上的操作環境為主 (如果你想要同時開發 Android、iOS 的應用程式的話只能選擇 Mac)。
+在開始寫第一支程式前, 我們還是需要先來做開發環境的設定, 這邊以 Mac 上的操作環境為主 (如果想要同時開發 Android、iOS 的應用程式的話, 我們只能選擇 Mac)。
 
 ## 先安裝 React-Native 使用到的函式庫
 ``` bash
@@ -32,4 +32,4 @@ npm install -g react-native-cli
 
 透過執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢)。
 
-> 到此目前
+> 到此, 我們已經有了可以執行 Android、iOS 程式的環境, 剩下就是如何透過 React-Native 同時建構兩個版本的應用程式, 節省共用部分的開發時間。
