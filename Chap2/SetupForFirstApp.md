@@ -29,3 +29,5 @@ npm install -g react-native-cli
 重新啟動 Android SDK Manager 再安裝與模擬器相關的項目
 * Intel x86 Atom System Image (for Android 5.1.1-API 22)
 * Intel x86 Emulator Accelerator (HAXM installer)
+
+`android avd` 創建一個模擬器 (Android Vritual Devices)
