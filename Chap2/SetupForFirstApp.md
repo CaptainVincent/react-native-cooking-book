@@ -27,4 +27,4 @@ npm install -g react-native-cli
 * Android Support Repository
 
 重新啟動 Android SDK Manager 再安裝與模擬器相關的項目
-*
+* Intel x86 Atom System Image (for Android 5.1.1-API 22)
