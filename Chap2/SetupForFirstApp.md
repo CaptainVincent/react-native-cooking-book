@@ -21,8 +21,10 @@ npm install -g react-native-cli
 * 安裝 Android SDK `brew install android-sdk`
 * 在 shell 組態檔中 export ANDROID_HOME 變數指到 sdk 的安裝路徑 (ex. export ANDROID_HOME=/usr/local/opt/android-sdk)
 
-透過 command line 執行 `android` 叫起 Android SDK Manager 的視窗介面除了預設項目, 再確保也安裝以下套件
+透過 command line 執行 `android` 叫起 Android SDK Manager 的視窗介面, 除了預設項目要確保也安裝以下套件
 * Android SDK Build-tools version 23.0.1
 * Android 6.0 (API 23)
 * Android Support Repository
-* 
+
+重新啟動 Android SDK Manager 再安裝與模擬器相關的項目
+*
