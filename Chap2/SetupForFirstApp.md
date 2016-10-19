@@ -16,4 +16,6 @@ npm install -g react-native-cli
 ## iOS 相依
 根據 Apple 官網文件安裝 XCode
 
-##
+## Android 相依
+* 安裝 JDK (Java Development Kit)
+* 安裝 Android SDK
