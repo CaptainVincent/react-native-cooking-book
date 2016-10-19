@@ -19,4 +19,4 @@ npm install -g react-native-cli
 ## Android 相依
 * 安裝 JDK (Java Development Kit)
 * 安裝 Android SDK `brew install android-sdk`
-* export ANDROID_HOME 的路徑指到 sdk 的安裝路徑
+* 在 shell 組態檔中 export ANDROID_HOME 變數指到 sdk 的安裝路徑 (ex. export ANDROID_HOME=/usr/local/opt/android-sdk)
