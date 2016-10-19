@@ -13,3 +13,7 @@ brew install flow //Facebook 的 型別檢查函式庫
 npm install -g react-native-cli
 ```
 
+## iOS 相依
+根據 Apple 官網文件安裝 XCode
+
+##
