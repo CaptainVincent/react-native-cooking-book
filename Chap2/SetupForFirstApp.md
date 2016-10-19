@@ -30,4 +30,4 @@ npm install -g react-native-cli
 * Intel x86 Atom System Image (for Android 5.1.1-API 22)
 * Intel x86 Emulator Accelerator (HAXM installer)
 
-透過執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢)
+透過執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢)。
