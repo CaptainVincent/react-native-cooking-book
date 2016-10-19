@@ -37,3 +37,5 @@ react-native init FirstProject
 |   `-- whatwg-fetch
 `-- package.json
 ```
+
+執行
