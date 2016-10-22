@@ -11,14 +11,12 @@
 
 ### index.ios.js 
 ```javascript
-import React, {
-  Component,
-} from 'react';
-
 import {
-  StyleSheet,
-  Text,
-  View,
-  TextInput,
+  AppRegistry,
 } from 'react-native';
+
+import WeatherProject from './WeatherProject';
+
+// 註冊頂層元件給 AppDelegate.m
+AppRegistry.registerComponent('WeatherProject', () => WeatherProject);
 ```
