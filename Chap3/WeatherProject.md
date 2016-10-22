@@ -2,6 +2,17 @@
 
 接下來將實作一個 Demo 的程式來介紹進一步的細節
 
+```
+./
+|-- index.ios.js //React code
+|-- WeatherProject.ios.js //New file
+|-- index.ios.js //New file
+```
+
+
+
+
+
 
 
 ```javascript
