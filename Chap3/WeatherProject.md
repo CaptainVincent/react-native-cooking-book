@@ -22,3 +22,6 @@ import WeatherProject from './WeatherProject';
 // 註冊頂層元件給 AppDelegate.m
 AppRegistry.registerComponent('WeatherProject', () => WeatherProject);
 ```
+
+```javascript
+```
