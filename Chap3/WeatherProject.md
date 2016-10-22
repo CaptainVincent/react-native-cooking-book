@@ -42,8 +42,8 @@ class Forecast extends Component {
   // 渲染內容
   render() {
     return(
+      //預報的三項資訊
       <View>
-        // 預報的三項資訊
         <Text style={styles.bigText}>
           {this.props.main}
         </Text>
