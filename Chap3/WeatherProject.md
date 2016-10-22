@@ -152,9 +152,12 @@ const styles = StyleSheet.create({
   input: {
     fontSize: 20,
     borderWidth: 2,
-    height: 40
+    height: 40,
     }
 });
 
 export default WeatherProject;
 ```
+
+### Result
+![](Simulator Screen Shot 2016年10月22日 20.33.42.png)
