@@ -115,6 +115,8 @@ class WeatherProject extends Component {
   }
 
   // 渲染內容
+  // 將 Hardcode 寫死的 fake 資訊傳給 Forecast 元件
+  // 宣告一個 Text Input 元件並將送出文字的行為串接 _handleTextChange
   render() {
     return (
       <View style={styles.container}>
@@ -134,6 +136,7 @@ class WeatherProject extends Component {
   }
 }
 
+// Text style 設定
 const styles = StyleSheet.create({
   container: {
     flex: 1,
