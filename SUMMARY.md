@@ -7,4 +7,5 @@
    * [Setup Environment](Chap2/SetupForFirstApp.md)
    * [創建新的程式](Chap2/CreateNewApp.md)
    * [部署到裝置](Chap2/DeployDevice.md)
+* [Weather Project](WeatherProject.md) 
 
