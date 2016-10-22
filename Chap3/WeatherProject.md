@@ -11,10 +11,10 @@
 
 ### index.ios.js 
 ```javascript
+// 引用
 import {
   AppRegistry,
 } from 'react-native';
-
 import WeatherProject from './WeatherProject';
 
 // 註冊頂層元件給 AppDelegate.m
