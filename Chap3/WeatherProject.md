@@ -80,17 +80,16 @@ export default Forecast;
 
 ### WeatherProject.js
 ```
+// 引用
 import React, {
   Component,
 } from 'react';
-
 import {
   StyleSheet,
   Text,
   View,
   TextInput,
 } from 'react-native';
-
 import Forecast from './Forecast';
 
 class WeatherProject extends Component {
