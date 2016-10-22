@@ -38,4 +38,4 @@ react-native init FirstProject
 `-- package.json
 ```
 
-目錄後方有//註解 簡略註解資料夾用途。
+目錄後方有 //註解 簡略註解資料夾用途。
