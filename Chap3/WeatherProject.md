@@ -106,7 +106,7 @@ class WeatherProject extends Component {
     };
   }
 
-  // Callback function
+  // Callback function, 用來處理輸入匡內文送出時的變化
   _handleTextChange(event) {
     console.log(event.nativeEvent.text);
     this.setState({
@@ -114,6 +114,7 @@ class WeatherProject extends Component {
     });
   }
 
+  // 渲染內容
   render() {
     return (
       <View style={styles.container}>
