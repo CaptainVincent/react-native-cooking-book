@@ -79,7 +79,7 @@ export default Forecast;
 ```
 
 ### WeatherProject.js
-```
+```javascript
 // 引用
 import React, {
   Component,
@@ -94,6 +94,7 @@ import Forecast from './Forecast';
 
 class WeatherProject extends Component {
   constructor(props) {
+    // property
     super(props);
     this.state = {
       zip: '',
@@ -105,6 +106,7 @@ class WeatherProject extends Component {
     };
   }
 
+  // Callback function
   _handleTextChange(event) {
     console.log(event.nativeEvent.text);
     this.setState({
