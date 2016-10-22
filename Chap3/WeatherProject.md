@@ -6,7 +6,7 @@
 ./
 |-- index.ios.js //React code
 |-- WeatherProject.ios.js //New file
-|-- index.ios.js //New file
+|-- Forecast.js //New file
 ```
 
 
