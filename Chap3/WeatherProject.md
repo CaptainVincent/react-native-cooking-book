@@ -11,4 +11,4 @@
 ```
 
 ### Result
-![](Simulator Screen Shot 2016年10月23日 19.53.31.png)
+![](ScreenSnapShot.jpg)
