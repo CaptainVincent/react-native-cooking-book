@@ -9,6 +9,7 @@
 * Images.xcassets > New Image Set
 ![](NewImageSet.jpg)
 
-*
+* 將不同尺寸的圖檔手動拖曳 (如果程式需能支援不同解析度的 device)
+![](DragPhoto.jpg)
 
 ### Android
