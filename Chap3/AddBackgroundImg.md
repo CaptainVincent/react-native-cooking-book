@@ -13,7 +13,7 @@
 ![](DragPhoto.jpg)
 
 ### Android
-將 Image 放置到下面目錄底下的不同解析度資料夾
+將 Image 放置到下面目錄底下, 不同解析度的資料夾 (若不存在則自行創建)
 ```
 <yourapp>/android/app/src/main/res
 ```
