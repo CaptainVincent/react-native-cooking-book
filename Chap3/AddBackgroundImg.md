@@ -5,6 +5,6 @@
 ### iOS 
 > 透過 XCode 來操作
 
-* Add new image group
-
+* Images.xcassets > New Image Set
+![](NewImageSet.jpg)
 ### Android
