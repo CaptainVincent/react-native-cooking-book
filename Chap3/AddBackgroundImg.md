@@ -13,3 +13,7 @@
     ├── bg@2x.png
     └── bg@3x.png
 ```
+
+```javascript
+<Image source={require('./img/bg.png')} />
+```
