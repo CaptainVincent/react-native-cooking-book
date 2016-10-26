@@ -10,5 +10,7 @@
 ├── index.ios.js
 └── img
     ├── bg@2x.png
-    └── check@3x.png
+    └── bg@3x.png
+    ├── bg@2x.png
+    └── bg@3x.png
 ```
