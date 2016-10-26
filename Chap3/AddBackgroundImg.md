@@ -22,7 +22,7 @@
 ```
 
 ### WeatherProject.js
-```javascripts
+```javascript
 import React, {
   Component,
 } from 'react';
