@@ -5,3 +5,10 @@
 
 > 筆者因為參考書中的做法, 使用 image!filename 遇到了無法使用的問題, 建議還是參考使用官網建議的做法。
 
+```
+.
+├── button.js
+└── img
+    ├── check@2x.png
+    └── check@3x.png
+```
