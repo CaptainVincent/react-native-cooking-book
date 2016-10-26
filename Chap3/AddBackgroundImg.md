@@ -9,7 +9,9 @@
 .
 ├── index.ios.js
 └── img //可以將需使用的圖檔任意置放目錄內 (使用的時候是用相對位置指名路徑)
-    ├── bg.png //可加上不同檔尾來區分解析度, 若加上filename.ios.png 或 android 的關鍵字, packager 在打包資源的時候會分別依據平台打包
+    ├── bg.png //可加上不同檔尾來區分解析度, 
+                 //若加上filename.ios.png 或 android 的關鍵字
+                 //packager 在打包資源的時候會分別依據平台打包
     ├── bg@2x.png
     └── bg@3x.png
 ```
