@@ -14,6 +14,7 @@
     └── bg@3x.png
 ```
 
+使用方式
 ```javascript
 <Image source={require('./img/bg.png')} />
 ```
