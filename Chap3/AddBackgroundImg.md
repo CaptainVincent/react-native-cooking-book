@@ -3,21 +3,3 @@
 ## 靜態添加圖檔資源的方式
 先分別介紹加入靜態資源的方式 (內嵌入至應用程式中, 而非引用外部資源 ex. 網路上的圖片)
 
-### iOS 
-> 透過 XCode 來操作
-
-* Images.xcassets > New Image Set
-![](NewImageSet.jpg)
-
-* 將不同尺寸的圖檔手動拖曳 (如果程式需能支援不同解析度的 device)
-![](DragPhoto.jpg)
-
-### Android
-將 Image 放置到下面目錄底下, 不同解析度的資料夾 (若不存在則自行創建)
-```
-<yourapp>/android/app/src/main/res
-```
-* drawable-mdpi (1x)
-* drawable-hdpi (1.5x)
-* drawable-xhdpi (2x)
-* drawable-xxhdpi (3x)
