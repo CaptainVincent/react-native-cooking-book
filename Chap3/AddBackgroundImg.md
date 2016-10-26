@@ -133,3 +133,6 @@ const styles = StyleSheet.create({
 
 export default WeatherProject;
 ```
+
+### Result
+![](ScreenSnapShot1.jpg)
