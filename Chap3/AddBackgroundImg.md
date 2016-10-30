@@ -68,17 +68,18 @@ class WeatherProject extends Component {
               <Text style={styles.mainText}>
                 Current weather for
               </Text>
-              <Text style={styles.welcome}>
-                You input {this.state.zip}.
-              </Text>
               <View style={styles.zipContainer}>
                 <TextInput
                   style={[styles.zipCode, styles.mainText]}
                   returnKeyType='go'
                   onSubmitEditing={(event) => this._handleTextChange(event)}/>
               </View>
-             </View>
-           </View>
+            </View>
+            <Forecast
+              main={this.state.forecast.main}
+              description={this.state.forecast.description}
+              temp={this.state.forecast.temp}/>
+          </View>
         </Image>
        </View>
     );
@@ -108,7 +109,7 @@ const styles = StyleSheet.create({
   },
   row: {
     flex: 1,
-    flexDirection: 'column',
+    flexDirection: 'row',
     flexWrap: 'nowrap',
     alignItems: 'flex-start',
     padding: 30
