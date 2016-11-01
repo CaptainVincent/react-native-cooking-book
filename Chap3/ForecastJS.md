@@ -1,7 +1,7 @@
 # Forecast.js
 預報的元件, 用來呈現預報內容
 
-{%ace edit=true, lang='c_cpp'%}
+{%ace edit=true, lang='jsx', theme='monokai'%}
 // 引用
 import React, {
   Component,
