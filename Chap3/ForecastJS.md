@@ -1,7 +1,7 @@
 # Forecast.js
 預報的元件, 用來呈現預報內容
 
-```javascript
+{%ace edit=true, lang='c_cpp'%}
 // 引用
 import React, {
   Component,
@@ -50,4 +50,4 @@ const styles = StyleSheet.create({
 });
 
 export default Forecast;
-```
+{%endace%}
