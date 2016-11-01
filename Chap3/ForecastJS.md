@@ -39,14 +39,14 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-    color: '#FFFFFF',
+    color: '#FFFFFF'
   },
   mainText: {
     flex: 1,
     fontSize: 8,
     textAlign: 'center',
     margin: 10,
-    color: '#FFFFFF',
+    color: '#FFFFFF'
   },
 });
 
