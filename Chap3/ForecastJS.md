@@ -14,10 +14,9 @@ import {
 } from 'react-native';
 
 class Forecast extends Component {
-  // 渲染內容
+  // 渲染內容, 預報的三項資訊
   render() {
-    return(
-      // 預報的三項資訊
+    return( 
       <View>
         <Text style={styles.bigText}>
           {this.props.main}
