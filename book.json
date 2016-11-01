@@ -1,7 +1,6 @@
 {
     "plugins": [
-        "-highlight",
-        "sunlight-highlighter"
+        "-highlight"
     ],
     "pluginsConfig": {}
 }
