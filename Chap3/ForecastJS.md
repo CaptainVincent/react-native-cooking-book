@@ -15,22 +15,7 @@ import {
 
 class Forecast extends Component {
   // 渲染內容
-  render() {
-    return(
-      // 預報的三項資訊
-      <View>
-        <Text style={styles.bigText}>
-          {this.props.main}
-        </Text>
-        <Text style={styles.mainText}>
-          Current condiction: {this.props.description}
-        </Text>
-        <Text style={styles.bigText}>
-          {this.props.temp} F
-        </Text>
-      </View>
-    );
-  }
+
 }
 
 const styles = StyleSheet.create({
