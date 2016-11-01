@@ -17,6 +17,7 @@
   }
 ```
 
+### Result
 ![](FetchPage.jpg)
 
 > React Native fetch() Network Request Failed.
