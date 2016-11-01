@@ -29,7 +29,7 @@ class Forecast extends Component {
           {this.props.temp} F
         </Text>
       </View>
-    );
+    )
   }
 }
 
