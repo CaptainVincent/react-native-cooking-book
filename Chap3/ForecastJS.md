@@ -26,7 +26,7 @@ class Forecast extends Component {
           Current condiction: {this.props.description}
         </Text>
         <Text style={styles.bigText}>
-          {this.props.temp} F.
+          {this.props.temp} F
         </Text>
       </View>
     );
