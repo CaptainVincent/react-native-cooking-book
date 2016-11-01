@@ -1,6 +1,7 @@
 # Fetch API
 
 ### Simple Case
+![](FetchPage.jpg)
 ```javascript
   _handleTextChange(event) {
     console.log(event.nativeEvent.text);
@@ -16,3 +17,5 @@
     });
   }
 ```
+
+> 11
