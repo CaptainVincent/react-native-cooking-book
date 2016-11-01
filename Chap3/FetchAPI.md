@@ -20,7 +20,7 @@
 
 > React Native fetch() Network Request Failed.
 
-> iOS 預設僅允許 https 的 request, 若是用 http 的網址則會回傳上面這個 error message, 或是要修改 info.plist:
+> iOS 預設僅允許 https 的 request, 若是用 http 的網址則會回傳上面這個 error message, 或是要修改 info.plist
 ```
 <key>NSAppTransportSecurity</key>
 <dict>
