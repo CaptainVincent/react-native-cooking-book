@@ -1,6 +1,6 @@
 # Fetch API
 
-#### Simple Case
+### Simple Case
 ```javascript
   _handleTextChange(event) {
     console.log(event.nativeEvent.text);
