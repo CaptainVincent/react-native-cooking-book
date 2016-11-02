@@ -10,9 +10,7 @@
 ```
 透過其他標籤說明文字樣式。
 
-**Result**
-
-<p> The quick <em>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
+對應
 
 **React Native version**
 ```javascript
@@ -21,3 +19,7 @@
 </Text>
 ```
 透過 style 去額外設定樣式屬性。
+
+**Result**
+
+<p> The quick <em>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
