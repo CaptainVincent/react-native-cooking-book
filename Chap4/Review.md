@@ -57,6 +57,6 @@ var Em = React.createClass({
 
 ```javascript
 <Text>
-  The quick <Em>brown</Em> fox jumped over the lazy <Strong>dog</Text>.
+  The quick <Em>brown</Em> fox jumped over the lazy <Strong>dog</Strong>.
 </Text>
 ```
