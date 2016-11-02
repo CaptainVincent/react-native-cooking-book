@@ -18,6 +18,8 @@
 ```
 
 ### Result
+鍵入 111 送出後可以在 console 抓回的網頁內容。
+
 ![](FetchPage.jpg)
 
 
