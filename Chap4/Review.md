@@ -10,7 +10,7 @@
 ```
 透過其他標籤說明文字樣式。
 
-對應
+
 
 **React Native version**
 ```javascript
