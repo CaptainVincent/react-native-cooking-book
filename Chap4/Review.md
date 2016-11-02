@@ -53,7 +53,7 @@ var Em = React.createClass({
   }
 });
 ```
-宣告完樣式元件後
+宣告完樣式元件後, 就可以使 React Native 的版本相當接近 Web 的寫法。
 
 ```javascript
 <Text>
