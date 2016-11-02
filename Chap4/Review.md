@@ -4,4 +4,11 @@
 ## Text
 在 React Native 中只有 <Text> 是純文字的節點, 要以 <Text> 標籤包圍你的文字內容。
 
-Web version
+**Web version**
+```html
+<p> The quick <em>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
+```
+
+**Result**
+
+<p> The quick <em>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
