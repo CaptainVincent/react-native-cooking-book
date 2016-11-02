@@ -12,3 +12,10 @@
 **Result**
 
 <p> The quick <em>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
+
+**React Native version**
+```javascript
+<Text>
+  The quick <Text style={{fontStyle: "italic"}}>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
+<Text>
+```
