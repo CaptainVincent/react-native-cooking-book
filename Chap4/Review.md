@@ -16,6 +16,6 @@
 **React Native version**
 ```javascript
 <Text>
-  The quick <Text style={{fontStyle: "italic"}}>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
+  The quick <Text style={{fontStyle: "italic"}}>brown</Text> fox jumped over the lazy <strong>dog</strong>.</p>
 <Text>
 ```
