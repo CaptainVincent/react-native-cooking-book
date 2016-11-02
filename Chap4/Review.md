@@ -60,3 +60,5 @@ var Em = React.createClass({
   The quick <Em>brown</Em> fox jumped over the lazy <Strong>dog</Strong>.
 </Text>
 ```
+
+> React Native 中偏好使用重複的 **樣式元件**, 而非重複的使用 **樣式**。
