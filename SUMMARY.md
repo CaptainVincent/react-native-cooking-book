@@ -13,3 +13,4 @@
  * [WeatherProject.js](Chap3/WeatherProjectJS.md)
  * [新增背景圖片](Chap3/AddBackgroundImg.md)
  * [從網路取得資料 Fetch](Chap3/FetchAPI.md)
+* [元件介紹](Chap4/Component.md)

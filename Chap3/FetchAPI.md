@@ -18,10 +18,13 @@
 ```
 
 ### Result
+鍵入 111 送出後可以在 console 抓回的網頁內容。
+
 ![](FetchPage.jpg)
 
 
 > **React Native fetch() Network Request Failed.**
+
 > iOS 預設僅允許 https 的 request, 若是用 http 的網址則會回傳上面這個 error message, 或是要修改 info.plist (並rebuild project)
 ```xml
 <key>NSAppTransportSecurity</key>
