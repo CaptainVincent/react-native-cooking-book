@@ -64,3 +64,4 @@ var Em = React.createClass({
 > React Native 中偏好使用重複的 **樣式元件**, 而非重複的使用 **樣式**。
 
 ## Image
+可以參考
