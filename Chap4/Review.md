@@ -8,6 +8,7 @@
 ```html
 <p> The quick <em>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
 ```
+透過其他標籤說明文字樣式。
 
 **Result**
 
@@ -19,3 +20,4 @@
   The quick <Text style={{fontStyle: "italic"}}>brown</Text> fox jumped over the lazy <Text style={{fontWeight: "bold"}}>dog</Text>.
 </Text>
 ```
+透過 style 去額外設定樣式屬性。
