@@ -34,4 +34,12 @@ var styles = StyleSheet.create({
     fontStyle: "italic"
   }
 });
+
+var Strong = React.createClass({
+  render: function(){
+    return(
+      <Text style={styles.bold}>
+      </Text>);
+  }
+});
 ```
