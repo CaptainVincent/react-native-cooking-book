@@ -10,10 +10,6 @@
 ```
 透過其他標籤說明文字樣式。
 
-**Result**
-
-<p> The quick <em>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
-
 **React Native version**
 ```javascript
 <Text>
@@ -21,3 +17,46 @@
 </Text>
 ```
 透過 style 去額外設定樣式屬性。
+
+**Result**
+
+<p> The quick <em>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
+
+### 建立樣式元件 React Native
+透過上面 React Native version 的寫法, 很繁瑣而且程式碼會顯得很醜。
+
+```javascript
+var styles = StyleSheet.create({
+  bold: {
+    fontWeight: "bold"
+  },
+  italic: {
+    fontStyle: "italic"
+  }
+});
+
+var Strong = React.createClass({
+  render: function(){
+    return(
+      <Text style={styles.bold}>
+        {this.props.children}
+      </Text>);
+  }
+});
+
+var Em = React.createClass({
+  render: function(){
+    return(
+      <Text style={styles.italic}>
+        {this.props.children}
+      </Text>);
+  }
+});
+```
+宣告完樣式元件後, 就可以使 React Native 的版本相當接近 Web 的寫法。
+
+```javascript
+<Text>
+  The quick <Em>brown</Em> fox jumped over the lazy <Strong>dog</Strong>.
+</Text>
+```
