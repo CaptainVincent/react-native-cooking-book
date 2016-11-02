@@ -10,8 +10,6 @@
 ```
 透過其他標籤說明文字樣式。
 
-
-
 **React Native version**
 ```javascript
 <Text>
@@ -23,3 +21,11 @@
 **Result**
 
 <p> The quick <em>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
+
+### 建立樣式元件 React Native
+透過上面 React Native version 的寫法, 很繁瑣而且程式碼會顯得很醜。
+
+```javascript
+var styles = StyleSheet.create(
+);
+```
