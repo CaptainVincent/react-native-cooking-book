@@ -39,7 +39,24 @@ var Strong = React.createClass({
   render: function(){
     return(
       <Text style={styles.bold}>
+        {this.props.children}
       </Text>);
   }
 });
+
+var Em = React.createClass({
+  render: function(){
+    return(
+      <Text style={styles.italic}>
+        {this.props.children}
+      </Text>);
+  }
+});
+```
+宣告完樣式元件後
+
+```javascript
+<Text>
+  The quick <Em>brown</Em> fox jumped over the lazy <Strong>dog</Text>.
+</Text>
 ```
