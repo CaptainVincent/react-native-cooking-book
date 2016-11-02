@@ -7,4 +7,4 @@
 | div | View |
 | img | Image |
 | span、p | Text |
-| ul/ol、li | 1:5 |
+| ul/ol、li | ListView、子元素 |
