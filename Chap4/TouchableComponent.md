@@ -84,10 +84,13 @@ export default Button;
 ### GestureResponder 系統
 除了 "觸碰" 以外的行為定義, React Native 也提供的兩種可自訂的觸控處理: GestureResponder(較低階)、PanResponder。
 
-> 預設由最上層 (最深的節點元件) 的 view 來處理觸控事件; 要能處理觸控事件的 View 應該實作其四種屬性 
-> * View.props.onStartShouldSetResponder //回傳 true 時該 view 會嘗試成為回應程序
-> * View.props.onMoveShouldSetResponder //回傳 true 時該 view 會嘗試成為回應程序
-> * View.props.onResponderGrant //當無其他更深節點時會被授權成為回應程序, 此函式被呼叫
-> * View.props.onResponderReject //當有其他更適合的角色則被拒絕
+預設由最上層 (最深的節點元件) 的 view 來處理觸控事件; 要能處理觸控事件的 View 應該實作其四種屬性 
+
+* View.props.onStartShouldSetResponder //回傳 true 時該 view 會嘗試成為回應程序
+* View.props.onMoveShouldSetResponder //回傳 true 時該 view 會嘗試成為回應程序
+* View.props.onResponderGrant //當無其他更深節點時會被授權成為回應程序, 此函式被呼叫
+* View.props.onResponderReject //當有其他更適合的角色則被拒絕
 
 ![](EventPassFlow.png)
+
+若父節點想要強制攔截程序時, 可透過 onStartShouldSetResponderCapture、onMoveShouldSetResponderCapture 的回傳值得到 true 進而阻止子節點成為回應程序。
