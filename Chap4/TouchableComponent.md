@@ -105,9 +105,9 @@ export default Button;
 
 觸控事件的格式
 * changeTouches //從上一次事件後所有改變的 **觸控事件之陣列**
-* identifier
-* locationX
-* locationY
-* pageX
-* pageY
-* target
+* identifier //觸碰的 ID
+* locationX //觸碰相對於元素的 X 座標
+* locationY //觸碰相對於元素的 Y 座標
+* pageX //觸碰相對於螢幕的 X 座標
+* pageY //觸碰相對於螢幕的 X 座標
+* target //接收觸控事件元素的節點 id
