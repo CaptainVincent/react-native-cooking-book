@@ -1,5 +1,5 @@
 # TEXT/IMG 元件介紹
-在開始介紹新的 Component 前, 先複習一下之前常用到的兩種。
+在開始介紹新的 Component 前, 先來複習一下之前常用到的兩種 Text、View component。
 ***
 
 ## Text
@@ -23,7 +23,7 @@
 
 <p> The quick <em>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
 
-### 建立樣式元件 React Native
+### 建立樣式元件 (React Native)
 透過上面 React Native version 的寫法, 很繁瑣而且程式碼會顯得很醜。
 
 ```javascript
