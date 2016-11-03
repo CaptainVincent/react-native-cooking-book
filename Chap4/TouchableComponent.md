@@ -95,4 +95,19 @@ export default Button;
 
 若父節點想要強制攔截程序時, 可透過 onStartShouldSetResponderCapture、onMoveShouldSetResponderCapture 的回傳值得到 true 進而阻止子節點成為回應程序。
 
-#### 回應程序
+#### 回應程序角色
+當該 View 順利成為觸控回應程序後, 就能收到並觸發以下相關的處理程序。
+
+* View.props.onResponderMove //使用者移動手指
+* View.props.onResponderRelease //觸碰結束時觸發
+* View.props.onResponderTerminationRequest //有其他元件想要成為處理程序時, 此 view 是否應該釋出回應程序? 回傳true 會釋出
+* View.props.onResponderTerminate //回應程序被搶走後, 可能透過上面函式 或是 OS 在沒詢問下取走 (控制、通知中心)
+
+觸控事件的格式
+* changeTouches //從上一次事件後所有改變的 **觸控事件之陣列**
+* identifier
+* locationX
+* locationY
+* pageX
+* pageY
+* target
