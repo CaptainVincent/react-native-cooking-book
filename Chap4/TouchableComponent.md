@@ -111,3 +111,5 @@ export default Button;
 * pageX //觸碰相對於螢幕的 X 座標
 * pageY //觸碰相對於螢幕的 X 座標
 * target //接收觸控事件元素的節點 id
+* timestamp //觸碰的時間戳記, 計算向量時很有用
+* touches //目前螢幕上所有觸碰的陣列
