@@ -70,3 +70,5 @@ var Em = React.createClass({
 ```javascript
 <Image source={{uri: 'http://placekitten.com/g/320/240'}}>
 ```
+
+> **resizeMode** PropTypes.oneOf(['cover', 'contain', 'stretch', 'repeat', 'center']), 可以用來調整圖片 size 沒有 fit view 的 size 時如何縮放裁切。
