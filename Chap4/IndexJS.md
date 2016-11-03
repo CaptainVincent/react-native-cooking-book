@@ -1,6 +1,5 @@
 # index.ios.js / index.android.js
 
-Sample Code
 ```javascript
 import React from 'react';
 import {
