@@ -82,7 +82,7 @@ export default Button;
 
 ***
 ### GestureResponder 系統
-除了 "觸碰" 以外的行為定義, React Native 也提供的兩種可自訂的觸控處理: GestureResponder(較低階)、PanResponder。
+除了 "觸碰" 以外的行為定義, React Native 也提供的兩種可自訂的觸控處理: GestureResponder (較低階的行為描述)、PanResponder。
 
 預設由最上層 (最深的節點元件) 的 view 來處理觸控事件; 要能處理觸控事件的 View 應該實作其四種屬性 
 
@@ -103,7 +103,8 @@ export default Button;
 * View.props.onResponderTerminationRequest //有其他元件想要成為處理程序時, 此 view 是否應該釋出回應程序? 回傳true 會釋出
 * View.props.onResponderTerminate //回應程序被搶走後, 可能透過上面函式 或是 OS 在沒詢問下取走 (控制、通知中心)
 
-觸控事件的格式
+收到觸控事件的內容格式
+
 * changeTouches //從上一次事件後所有改變的 **觸控事件之陣列**
 * identifier //觸碰的 ID
 * locationX //觸碰相對於元素的 X 座標
@@ -111,3 +112,46 @@ export default Button;
 * pageX //觸碰相對於螢幕的 X 座標
 * pageY //觸碰相對於螢幕的 X 座標
 * target //接收觸控事件元素的節點 id
+* timestamp //觸碰的時間戳記, 計算向量時很有用
+* touches //目前螢幕上所有觸碰的陣列
+
+***
+### PanResponder
+將 GestureResponder 系統包裝成高階的 API (gestureState) 存取以下的資訊
+
+* startID //gestureState 的 ID (只要螢幕上至少一個觸碰)
+* moveX //最近一次碰觸移動的螢幕座標
+* moveY //最近一次碰觸移動的螢幕座標
+* x0 //回應程序產生時的螢幕座標
+* y0 //回應程序產生時的螢幕座標
+* dx //從觸碰開始累計的手勢移動距離
+* dy //從觸碰開始累計的手勢移動距離
+* vx //目前手勢的向量
+* vy //目前手勢的向量
+* numberActiveTouches //目前螢幕上的觸碰數量
+
+#### 使用方式
+
+建構 PanResponder 需傳入一些 callback function
+```javascript
+this._panResponder = PanResponder.create({
+  onStartShouldSetPanResponder: this._handleStartShouldSetPanResponder,
+  onMoveShouldSetPanResponder: this._handleMoveShouldSetPanResponder,
+  onPanResponderGrant: this._handlePanResponderGrant,
+  onPanResponderMove: this._handlePanResponderMove,
+  onPanResponderRelease: this._handlePanResponderEnd,
+  onPanRespondeTerminate: this._handlePanRespondeEnd,
+});
+```
+
+透過展開語法將 PanResponder 加入 render 中的 View
+```javascript
+render: function(){
+  return(
+    <View>
+      {...this._panResponder.panHandlers}>
+      ( /*View的內容*/ )
+    </View>
+  );
+}
+```
