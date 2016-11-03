@@ -1,6 +1,6 @@
 # Fetch API
 
-### Simple Case
+### WeatherProject.js (Simple Case)
 ```javascript
   _handleTextChange(event) {
     console.log(event.nativeEvent.text);
