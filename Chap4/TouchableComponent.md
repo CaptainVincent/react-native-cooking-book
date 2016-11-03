@@ -84,7 +84,7 @@ export default Button;
 ### GestureResponder 系統
 除了 "觸碰" 以外的行為定義, React Native 也提供的兩種可自訂的觸控處理: GestureResponder(較低階)、PanResponder。
 
-> 預設由最上層(最深的節點元件)的 view 來處理觸控事件; 要能處理觸控事件的 View 應該定義其四種屬性 
+> 預設由最上層 (最深的節點元件) 的 view 來處理觸控事件; 要能處理觸控事件的 View 應該定義其四種屬性 
 > * View.props.onStartShouldSetResponder
 > * View.props.onMoveShouldSetResponder
 > * View.props.onResponderGrant
