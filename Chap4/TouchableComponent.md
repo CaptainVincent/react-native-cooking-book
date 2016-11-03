@@ -129,3 +129,19 @@ export default Button;
 * vx //目前手勢的向量
 * vy //目前手勢的向量
 * numberActiveTouches //目前螢幕上的觸碰數量
+
+#### 使用方式
+
+建構 PanResponder 需傳入一些 callback function
+```javascript
+this._panResponder = PanResponder.create({
+  onStartShouldSetPanResponder: this._handleStartShouldSetPanResponder,
+  onMoveShouldSetPanResponder: this._handleMoveShouldSetPanResponder,
+  onPanResponderGrant: this._handlePanResponderGrant,
+  onPanResponderMove: this._handlePanResponderMove,
+  onPanResponderRelease: this._handlePanResponderEnd,
+  onPanRespondeTerminate: this._handlePanRespondeEnd,
+});
+```
+
+透過展開語法將 PanResponder 加入 render 中的 View
