@@ -66,6 +66,8 @@ var Em = React.createClass({
 ## Image
 可以參考前面章節的使用方式。
 
+```javascript
 <Image source={require('./img/BackGround.jpg')}
        resizeMode='cover'
        style={styles.backdrop}>
+```
