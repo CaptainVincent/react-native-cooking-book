@@ -113,3 +113,6 @@ export default Button;
 * target //接收觸控事件元素的節點 id
 * timestamp //觸碰的時間戳記, 計算向量時很有用
 * touches //目前螢幕上所有觸碰的陣列
+
+***
+### PanResponder 系統
