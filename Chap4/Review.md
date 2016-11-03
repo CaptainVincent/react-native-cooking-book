@@ -19,7 +19,7 @@
 ```
 透過 style 去額外設定樣式屬性。
 
-**Result**
+**Result** :
 
 <p> The quick <em>brown</em> fox jumped over the lazy <strong>dog</strong>.</p>
 
