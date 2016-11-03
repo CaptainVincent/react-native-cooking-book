@@ -1,4 +1,4 @@
-# 觸控元件介紹
+# 觸控元件
 
 ***
 ### TouchableHighlight
