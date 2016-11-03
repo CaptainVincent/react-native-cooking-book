@@ -6,7 +6,7 @@
 
 * onPressIn
 * onPressOut
-* onLongPresswl6
+* onLongPress
 
 **Github: bonniee/learning-react-native/Touch/PressDemo.js**
 ```javascript
