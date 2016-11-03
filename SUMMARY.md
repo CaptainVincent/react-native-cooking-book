@@ -1,14 +1,14 @@
 # Summary
 
-* [Introduction](README.md)
+1. [Introduction](README.md)
 * [React Native 是什麼?](Chap1/AboutReactNative.md)
 * [使用 React Native](Chap2/StartUseReactNative.md)
- * [Virtual DOM](Chap2/VirtualDOM.md)
+ 1. [Virtual DOM](Chap2/VirtualDOM.md)
  * [Setup Environment](Chap2/SetupForFirstApp.md)
  * [創建新的程式](Chap2/CreateNewApp.md)
  * [部署到裝置](Chap2/DeployDevice.md)
 * [Weather Project](Chap3/WeatherProject.md)
- * [index.ios.js / index.android.js](Chap3/IndexJS.md)
+ 1. [index.ios.js / index.android.js](Chap3/IndexJS.md)
  * [Forecast.js](Chap3/ForecastJS.md)
  * [WeatherProject.js](Chap3/WeatherProjectJS.md)
  * [新增背景圖片](Chap3/AddBackgroundImg.md)
