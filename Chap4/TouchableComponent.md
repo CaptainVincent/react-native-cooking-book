@@ -94,3 +94,5 @@ export default Button;
 ![](EventPassFlow.png)
 
 若父節點想要強制攔截程序時, 可透過 onStartShouldSetResponderCapture、onMoveShouldSetResponderCapture 的回傳值得到 true 進而阻止子節點成為回應程序。
+
+#### 回應程序
