@@ -103,7 +103,8 @@ export default Button;
 * View.props.onResponderTerminationRequest //有其他元件想要成為處理程序時, 此 view 是否應該釋出回應程序? 回傳true 會釋出
 * View.props.onResponderTerminate //回應程序被搶走後, 可能透過上面函式 或是 OS 在沒詢問下取走 (控制、通知中心)
 
-觸控事件的格式
+收到觸控事件的內容格式
+
 * changeTouches //從上一次事件後所有改變的 **觸控事件之陣列**
 * identifier //觸碰的 ID
 * locationX //觸碰相對於元素的 X 座標
@@ -116,4 +117,15 @@ export default Button;
 
 ***
 ### PanResponder
-將 GestureResponder 系統包裝成高階的 API
+將 GestureResponder 系統包裝成高階的 API (gestureState) 存取以下的資訊
+
+* startID //gestureState 的 ID (只要螢幕上至少一個觸碰)
+* moveX //最近一次碰觸移動的螢幕座標
+* moveY //最近一次碰觸移動的螢幕座標
+* x0 //回應程序產生時的螢幕座標
+* y0 //回應程序產生時的螢幕座標
+* dx //從觸碰開始累計的手勢移動距離
+* dy //從觸碰開始累計的手勢移動距離
+* vx //目前手勢的向量
+* vy //目前手勢的向量
+* numberActiveTouches //目前螢幕上的觸碰數量
