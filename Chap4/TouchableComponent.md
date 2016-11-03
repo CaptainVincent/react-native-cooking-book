@@ -145,3 +145,13 @@ this._panResponder = PanResponder.create({
 ```
 
 透過展開語法將 PanResponder 加入 render 中的 View
+```javascript
+render: function(){
+  return(
+    <View>
+      {...this._panResponder.panHandlers}>
+      ( /*View的內容*/ )
+    </View>
+  );
+}
+```
