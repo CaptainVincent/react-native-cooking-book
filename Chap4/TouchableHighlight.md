@@ -1,1 +1,3 @@
 # TouchableHighlight
+
+Component TouchableHighlight
