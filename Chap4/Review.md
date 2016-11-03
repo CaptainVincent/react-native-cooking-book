@@ -66,6 +66,7 @@ var Em = React.createClass({
 ## Image
 靜態引入的方式, 可以參考前面章節的使用方式。
 
+**引用網路資源的方式**
 ```javascript
 <Image source={{uri: 'http://placekitten.com/g/320/240'}}>
 ```
