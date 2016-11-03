@@ -87,7 +87,7 @@ export default Button;
 > 預設由最上層 (最深的節點元件) 的 view 來處理觸控事件; 要能處理觸控事件的 View 應該實作其四種屬性 
 > * View.props.onStartShouldSetResponder //回傳 true 時該 view 會嘗試成為回應程序
 > * View.props.onMoveShouldSetResponder //回傳 true 時該 view 會嘗試成為回應程序
-> * View.props.onResponderGrant
-> * View.props.onResponderReject
+> * View.props.onResponderGrant //當無其他更深節點時會被授權成為回應程序, 此函式被呼叫
+> * View.props.onResponderReject //當有其他更適合的角色則被拒絕
 
 ![](EventPassFlow.png)
