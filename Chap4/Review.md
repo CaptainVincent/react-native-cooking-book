@@ -67,7 +67,5 @@ var Em = React.createClass({
 靜態引入的方式, 可以參考前面章節的使用方式。
 
 ```javascript
-<Image source={uri}
-       resizeMode='cover'
-       style={styles.backdrop}>
+  <Image source={{uri: 'http://placekitten.com/g/320/240'}}>
 ```
