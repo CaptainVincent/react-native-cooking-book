@@ -115,4 +115,5 @@ export default Button;
 * touches //目前螢幕上所有觸碰的陣列
 
 ***
-### PanResponder 系統
+### PanResponder
+將 GestureResponder 系統包裝成高階的 API
