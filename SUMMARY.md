@@ -18,4 +18,4 @@
  * [觸控元件](Chap4/TouchableComponent.md)
  * [index.ios.js / index.android.js](Chap4/IndexJS.md)
  * [PanDemo.js](Chap4/PanDemoJS.md)
- * [高階元件](Chap4/TouchableHighLevelComponent.md)
+ * [高階元件 ListView、TabView、NavigatorView](Chap4/TouchableHighLevelComponent.md)
