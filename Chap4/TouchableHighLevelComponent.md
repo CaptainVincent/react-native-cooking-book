@@ -3,7 +3,7 @@
 
 ### ListView
 
-List
+ListView 需要指名兩個屬性, 分別是 dataSource 說明呈現的內容來源, renderRow 如何根據內容去渲染的方式。
 ```javascript
 <ListView
   dataSource={this.state.dataSource}
