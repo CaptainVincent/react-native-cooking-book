@@ -10,3 +10,8 @@ ListView 需要指名兩個屬性, 分別是 dataSource 說明呈現的內容來
   renderRow={this._renderRow}
   />
 ```
+
+而 ListView.DataSource 又需要時做 rowHasChanged 的判斷方法, 底下是個 Simple Case
+```javascript
+ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+```
