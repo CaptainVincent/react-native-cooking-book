@@ -166,3 +166,5 @@ const styles = StyleSheet.create({
 
 export default PanDemo;
 ```
+
+### Result
