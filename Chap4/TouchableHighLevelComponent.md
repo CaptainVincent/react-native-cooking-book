@@ -20,6 +20,8 @@ ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 (index.ios.js 省略)
 
 **BookList.js**
+
+如何透過 NY Times 的 API 取得資料更新 ListView 中的 content
 ```javascript
 import React, {
   Component,
@@ -135,7 +137,9 @@ const styles = StyleSheet.create({
 export default BookList;
 ```
 
-BookItem.js
+**BookItem.js**
+
+定義如何呈現列表內元素
 ```javascript
 import React, {
   Component,
