@@ -169,5 +169,5 @@ export default PanDemo;
 
 ### Result
 
-點壓藍色圓則會轉變成綠色, 並根據使用者的操作更新顯示的文字內容
+點壓藍色圓則會轉變成綠色, 並根據使用者的操作更新顯示的文字內容。
 ![](ScreenSnapShot2.jpg)
