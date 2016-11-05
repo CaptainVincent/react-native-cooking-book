@@ -1,7 +1,7 @@
 # 觸控元件
 
 ***
-### TouchableHighlight
+## TouchableHighlight
 任何回應使用者觸控事件的介面元素都應該被 TouchableHighlight 標籤包裝著, 該元件會與以下事件建立掛鉤, 開發者再將其行為定義即可。
 
 * onPressIn
@@ -81,7 +81,7 @@ export default Button;
 ```
 
 ***
-### GestureResponder 系統
+## GestureResponder 系統
 除了 "觸碰" 以外的行為定義, React Native 也提供的兩種可自訂的觸控處理: GestureResponder (較低階的行為描述)、PanResponder。
 
 預設由最上層 (最深的節點元件) 的 view 來處理觸控事件; 要能處理觸控事件的 View 應該實作其四種屬性 
@@ -116,7 +116,7 @@ export default Button;
 * touches //目前螢幕上所有觸碰的陣列
 
 ***
-### PanResponder
+## PanResponder
 將 GestureResponder 系統包裝成高階的 API (gestureState) 存取以下的資訊
 
 * startID //gestureState 的 ID (只要螢幕上至少一個觸碰)
@@ -144,7 +144,7 @@ this._panResponder = PanResponder.create({
 });
 ```
 
-透過展開語法將 PanResponder 加入 render 中的 View
+再透過展開語法將 PanResponder 加入 render 中的 View
 ```javascript
 render: function(){
   return(
@@ -155,3 +155,191 @@ render: function(){
   );
 }
 ```
+
+### index.ios.js / index.android.js
+
+同 WeatherProject, 這層僅是一個轉介層。
+```javascript
+import React from 'react';
+import {
+  AppRegistry,
+} from 'react-native';
+
+import PanDemo from './PanDemo';
+
+AppRegistry.registerComponent('PanDemo', () => PanDemo);
+```
+
+### PanDemo.js
+
+```javascript
+// Adapted from https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/PanResponderExample.js
+
+'use strict';
+
+import React, { Component } from 'react';
+import {
+  StyleSheet,
+  PanResponder,
+  View,
+  Text
+} from 'react-native';
+
+const CIRCLE_SIZE = 50;
+const CIRCLE_COLOR = 'blue';
+const CIRCLE_HIGHLIGHT_COLOR = 'green';
+
+class PanDemo extends Component {
+
+  // Set some initial values.
+  _panResponder = {}
+  _previousLeft = 0
+  _previousTop = 0
+  _circleStyles = {}
+  circle = null
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      numberActiveTouches: 0,
+      moveX: 0,
+      moveY: 0,
+      x0: 0,
+      y0: 0,
+      dx: 0,
+      dy: 0,
+      vx: 0,
+      vy: 0
+    };
+  }
+
+  componentWillMount() {
+    this._panResponder = PanResponder.create({
+      onStartShouldSetPanResponder: this._handleStartShouldSetPanResponder,
+      onMoveShouldSetPanResponder: this._handleMoveShouldSetPanResponder,
+      onPanResponderGrant: this._handlePanResponderGrant,
+      onPanResponderMove: this._handlePanResponderMove,
+      onPanResponderRelease: this._handlePanResponderEnd,
+      onPanResponderTerminate: this._handlePanResponderEnd,
+    });
+    this._previousLeft = 20;
+    this._previousTop = 84;
+    this._circleStyles = {
+      style: {
+        left: this._previousLeft,
+        top: this._previousTop,
+      }
+    };
+  }
+
+  componentDidMount() {
+    this._updatePosition();
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <View
+          ref={(circle) => {
+            this.circle = circle;
+          }}
+          style={styles.circle}
+          {...this._panResponder.panHandlers}/>
+        <Text>
+          {this.state.numberActiveTouches} touches,
+          dx: {this.state.dx},
+          dy: {this.state.dy},
+          vx: {this.state.vx},
+          vy: {this.state.vy}
+        </Text>
+      </View>
+    );
+  }
+
+  // _highlight and _unHighlight get called by PanResponder methods,
+  // providing visual feedback to the user.
+  _highlight = () => {
+    this.circle && this.circle.setNativeProps({
+      style: {
+        backgroundColor: CIRCLE_HIGHLIGHT_COLOR
+      }
+    });
+  }
+
+  _unHighlight = () => {
+    this.circle && this.circle.setNativeProps({
+      style: {
+        backgroundColor: CIRCLE_COLOR
+      }
+    });
+  }
+
+  // We're controlling the circle's position directly with setNativeProps.
+  _updatePosition = () => {
+    this.circle && this.circle.setNativeProps(this._circleStyles);
+  }
+
+  _handleStartShouldSetPanResponder = (e: Object, gestureState: Object) => {
+    // Should we become active when the user presses down on the circle?
+    return true;
+  }
+
+  _handleMoveShouldSetPanResponder = (e: Object, gestureState: Object) => {
+    // Should we become active when the user moves a touch over the circle?
+    return true;
+  }
+
+  _handlePanResponderGrant = (e: Object, gestureState: Object) => {
+    this._highlight();
+  }
+
+  _handlePanResponderMove = (e: Object, gestureState: Object) => {
+    this.setState({
+      stateID: gestureState.stateID,
+      moveX: gestureState.moveX,
+      moveY: gestureState.moveY,
+      x0: gestureState.x0,
+      y0: gestureState.y0,
+      dx: gestureState.dx,
+      dy: gestureState.dy,
+      vx: gestureState.vx,
+      vy: gestureState.vy,
+      numberActiveTouches: gestureState.numberActiveTouches
+    });
+
+    // Calculate current position using deltas
+    this._circleStyles.style.left = this._previousLeft + gestureState.dx;
+    this._circleStyles.style.top = this._previousTop + gestureState.dy;
+    this._updatePosition();
+  }
+
+  _handlePanResponderEnd = (e: Object, gestureState: Object) => {
+    this._unHighlight();
+    this._previousLeft += gestureState.dx;
+    this._previousTop += gestureState.dy;
+  }
+}
+
+const styles = StyleSheet.create({
+  circle: {
+    width: CIRCLE_SIZE,
+    height: CIRCLE_SIZE,
+    borderRadius: CIRCLE_SIZE / 2,
+    backgroundColor: CIRCLE_COLOR,
+    position: 'absolute',
+    left: 0,
+    top: 0,
+  },
+  container: {
+    flex: 1,
+    paddingTop: 64,
+  },
+});
+
+export default PanDemo;
+```
+
+### Result
+
+點壓藍色圓則會轉變成綠色, 並根據使用者的操作更新上方顯示的文字內容。
+![](ScreenSnapShot2.jpg)
