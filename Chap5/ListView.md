@@ -13,11 +13,10 @@ ListView 需要指名兩個屬性, 分別是 dataSource 說明呈現的內容來
 ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 ```
 
-### BookLisk Demo
+## BookLisk Demo
 (index.ios.js 省略)
 
-**BookList.js**
-
+###BookList.js
 如何透過 NY Times 的 API 取得資料更新 ListView 中的 content
 ```javascript
 import React, {
@@ -134,9 +133,9 @@ const styles = StyleSheet.create({
 export default BookList;
 ```
 
-**BookItem.js**
-
+###BookItem.js
 定義如何呈現列表內元素
+
 ```javascript
 import React, {
   Component,
