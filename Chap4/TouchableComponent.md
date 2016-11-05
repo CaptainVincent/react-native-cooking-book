@@ -1,4 +1,5 @@
 # 觸控元件
+這邊介紹基礎的觸控元件
 
 ***
 ## TouchableHighlight
