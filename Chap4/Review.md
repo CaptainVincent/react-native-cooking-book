@@ -65,7 +65,7 @@ var Em = React.createClass({
 > React Native 中偏好使用重複的 **樣式元件**, 而非重複的使用 **樣式**。
 
 ***
-## Image
+### Image
 靜態引入的方式, 可以參考前面章節的使用方式。
 
 **引用網路資源的方式**
