@@ -15,5 +15,5 @@
    * [觸控元件](Chap4/TouchableComponent.md)
 * [高階元件 List、Tab、Navigator](Chap5/HighLevelComponent.md)
    * [ListView](Chap5/ListView.md)
-   * [Navigator](Chap5/TabView.md)
+   * [Navigator](Chap5/Navigator.md)
 
