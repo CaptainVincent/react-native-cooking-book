@@ -2,7 +2,7 @@
 在開始介紹新的 Component 前, 先來複習一下之前常用到的兩種 Text、View component。
 
 ***
-### Text
+## Text
 在 React Native 中只有 <Text> 是純文字的節點, 要以 <Text> 標籤包圍你的文字內容。
 
 **Web version**
@@ -65,7 +65,7 @@ var Em = React.createClass({
 > React Native 中偏好使用重複的 **樣式元件**, 而非重複的使用 **樣式**。
 
 ***
-### Image
+## Image
 靜態引入的方式, 可以參考前面章節的使用方式。
 
 **引用網路資源的方式**
