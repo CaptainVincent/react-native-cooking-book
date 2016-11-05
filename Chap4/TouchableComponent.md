@@ -1,7 +1,7 @@
 # 觸控元件
 
 ***
-### TouchableHighlight
+## TouchableHighlight
 任何回應使用者觸控事件的介面元素都應該被 TouchableHighlight 標籤包裝著, 該元件會與以下事件建立掛鉤, 開發者再將其行為定義即可。
 
 * onPressIn
@@ -81,7 +81,7 @@ export default Button;
 ```
 
 ***
-### GestureResponder 系統
+## GestureResponder 系統
 除了 "觸碰" 以外的行為定義, React Native 也提供的兩種可自訂的觸控處理: GestureResponder (較低階的行為描述)、PanResponder。
 
 預設由最上層 (最深的節點元件) 的 view 來處理觸控事件; 要能處理觸控事件的 View 應該實作其四種屬性 
@@ -116,7 +116,7 @@ export default Button;
 * touches //目前螢幕上所有觸碰的陣列
 
 ***
-### PanResponder
+## PanResponder
 將 GestureResponder 系統包裝成高階的 API (gestureState) 存取以下的資訊
 
 * startID //gestureState 的 ID (只要螢幕上至少一個觸碰)
