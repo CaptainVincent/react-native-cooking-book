@@ -144,7 +144,7 @@ this._panResponder = PanResponder.create({
 });
 ```
 
-透過展開語法將 PanResponder 加入 render 中的 View
+再透過展開語法將 PanResponder 加入 render 中的 View
 ```javascript
 render: function(){
   return(
@@ -154,4 +154,18 @@ render: function(){
     </View>
   );
 }
+```
+
+### index.ios.js / index.android.js
+
+同 WeatherProject, 這層僅是一個轉介層。
+```javascript
+import React from 'react';
+import {
+  AppRegistry,
+} from 'react-native';
+
+import PanDemo from './PanDemo';
+
+AppRegistry.registerComponent('PanDemo', () => PanDemo);
 ```
