@@ -157,6 +157,7 @@ render: function(){
 }
 ```
 
+### 目錄結構
 ```
 ./
 |-- index.ios.js //React code
