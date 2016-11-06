@@ -157,6 +157,14 @@ render: function(){
 }
 ```
 
+### 目錄結構
+```
+./
+|-- index.ios.js //React code
+|-- index.android.js //React code
+|-- PanDemo.js //New file
+```
+
 ### index.ios.js / index.android.js
 
 同 WeatherProject, 這層僅是一個轉介層。
