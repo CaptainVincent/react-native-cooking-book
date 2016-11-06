@@ -17,6 +17,9 @@ npm install -g react-native-cli
 根據 Apple 官網文件安裝 XCode (IDE、iOS模擬器、iOS SDK)
 
 ## Android 相依
+筆者原先是採用書中的做法來進行 android 的套件安裝, 但遇到如下圖所附的問題, 模擬器無法啟動 HAXM (Hardware Accelerated Execution Manager) 
+![](StartEmulatorFail.jpg)
+
 [StackOverflow Q&A](http://stackoverflow.com/questions/39739984/intel-haxm-6-0-4-not-compatible-with-macos)
 
 
@@ -36,6 +39,6 @@ npm install -g react-native-cli
 * Intel x86 Atom System Image (for Android 7.1.1-API 25)
 * Intel x86 Emulator Accelerator (HAXM installer)
 
-** 透過執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢)。**
+** 透過執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢)**
 
 > 到此, 我們已經有了可以執行 Android、iOS 程式的環境, 剩下就是如何透過 React-Native 同時建構兩個版本的應用程式, 節省共用部分的開發時間。
