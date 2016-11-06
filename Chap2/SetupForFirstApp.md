@@ -17,6 +17,8 @@ npm install -g react-native-cli
 根據 Apple 官網文件安裝 XCode (IDE、iOS模擬器、iOS SDK)
 
 ## Android 相依
+[StackOverflow Q&A](http://stackoverflow.com/questions/39739984/intel-haxm-6-0-4-not-compatible-with-macos)
+
 * 安裝 JDK (Java Development Kit)
 * 安裝 Android SDK `brew install android-sdk`
 * 在 shell 組態檔中 export ANDROID_HOME 變數指到 sdk 的安裝路徑 (ex. export ANDROID_HOME=/usr/local/opt/android-sdk)
