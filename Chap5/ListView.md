@@ -14,7 +14,15 @@ ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 ```
 
 ## BookLisk Demo
-(index.ios.js 省略)
+```
+./
+|-- index.ios.js //React code
+|-- index.android.js //React code
+|-- BookItem.js //New file
+|-- BookList.js //New file
+```
+
+(index.ios.js 省略介紹)
 
 ###BookList.js
 如何透過 NY Times 的 API 取得資料更新 ListView 中的 content
