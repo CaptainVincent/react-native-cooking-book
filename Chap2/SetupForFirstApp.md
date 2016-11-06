@@ -31,7 +31,7 @@ npm install -g react-native-cli
 
 按照 Android Studio 的建議安裝, 就是一步一步按 繼續/同意 就可以完成。
 
-#### 書中原作法參考 （但 筆者不建議）
+#### 書中原作法供參考 （但 筆者不建議）
 * 安裝 JDK (Java Development Kit)
 * 安裝 Android SDK `brew install android-sdk`
 * 在 shell 組態檔中 export ANDROID_HOME 變數指到 sdk 的安裝路徑 (ex. export ANDROID_HOME=/usr/local/opt/android-sdk)
