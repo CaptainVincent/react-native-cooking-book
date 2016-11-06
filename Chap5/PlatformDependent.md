@@ -60,3 +60,4 @@ class Switch extends Component {
 
 export default Switch;
 ```
+switch.android.js 的差別在於 **SwitchIOS** 元件用 **SwitchAndroid** 取代。
