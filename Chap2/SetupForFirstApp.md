@@ -17,13 +17,19 @@ npm install -g react-native-cli
 根據 Apple 官網文件安裝 XCode (IDE、iOS模擬器、iOS SDK)
 
 ## Android 相依
-筆者原先是採用書中的做法來進行 android 的套件安裝, 但遇到如下圖所附的問題, 模擬器無法啟動 HAXM (Hardware Accelerated Execution Manager) 
+筆者原先是採用書中的做法來進行 android 的套件安裝, 但遇到如下圖所附的問題, 模擬器無法啟動, 因為尚未安裝 HAXM (Hardware Accelerated Execution Manager)。
 ![](StartEmulatorFail.jpg)
 
-[StackOverflow Q&A](http://stackoverflow.com/questions/39739984/intel-haxm-6-0-4-not-compatible-with-macos)
+但是從 android sdk 的 tool manager 發現目前的版本 6.0.4 尚未提供 Mac 可以安裝。
+![](InstallFail.jpg)
+
+[StackOverflow Q&A](http://stackoverflow.com/questions/39739984/intel-haxm-6-0-4-not-compatible-with-macos), 上面提供的建議是安裝 6.0.3 的版本
+
+> HAXM v6.0.3 can only be installed via Android Studio -> SDK manager.
 
 
-#### 書中原作法 （但筆者不建議）
+
+#### 書中原作法參考 （但 筆者不建議）
 * 安裝 JDK (Java Development Kit)
 * 安裝 Android SDK `brew install android-sdk`
 * 在 shell 組態檔中 export ANDROID_HOME 變數指到 sdk 的安裝路徑 (ex. export ANDROID_HOME=/usr/local/opt/android-sdk)
