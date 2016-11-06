@@ -36,6 +36,6 @@ npm install -g react-native-cli
 * Intel x86 Atom System Image (for Android 7.1.1-API 25)
 * Intel x86 Emulator Accelerator (HAXM installer)
 
-#### 透過執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢)。
+** 透過執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢)。**
 
 > 到此, 我們已經有了可以執行 Android、iOS 程式的環境, 剩下就是如何透過 React-Native 同時建構兩個版本的應用程式, 節省共用部分的開發時間。
