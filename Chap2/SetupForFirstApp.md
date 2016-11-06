@@ -31,7 +31,8 @@ npm install -g react-native-cli
 * Android 7.1.1 (API 25)
 * Android Support Repository
 
-#### 重新啟動 Android SDK Manager 再安裝與模擬器相關的項目
+** 重新啟動 Android SDK Manager 再安裝與模擬器相關的項目**
+
 * Intel x86 Atom System Image (for Android 7.1.1-API 25)
 * Intel x86 Emulator Accelerator (HAXM installer)
 
