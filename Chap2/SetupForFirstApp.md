@@ -25,7 +25,8 @@ npm install -g react-native-cli
 * 安裝 Android SDK `brew install android-sdk`
 * 在 shell 組態檔中 export ANDROID_HOME 變數指到 sdk 的安裝路徑 (ex. export ANDROID_HOME=/usr/local/opt/android-sdk)
 
-#### 透過 command line 執行 `android` 叫起 Android SDK Manager 的視窗介面, 除了預設項目要確保也安裝以下套件
+** 透過 command line 執行 `android` 叫起 Android SDK Manager 的視窗介面, 除了預設項目要確保也安裝以下套件**
+
 * Android SDK Build-tools version 25 //2016-10-20 最新版本
 * Android 7.1.1 (API 25)
 * Android Support Repository
