@@ -23,13 +23,13 @@ npm install -g react-native-cli
 但是從 android sdk 的 tool manager 發現目前的版本 6.0.4 尚未提供 Mac 可以安裝。
 ![](InstallFail.jpg)
 
-[StackOverflow Q&A](http://stackoverflow.com/questions/39739984/intel-haxm-6-0-4-not-compatible-with-macos), 上面提供的建議是安裝 6.0.3 的版本
+在 [StackOverflow Q&A](http://stackoverflow.com/questions/39739984/intel-haxm-6-0-4-not-compatible-with-macos), 上面提供的 work around 建議是安裝 6.0.3 的版本
 
 > HAXM v6.0.3 can only be installed via Android Studio -> SDK manager.
 
 ![](AndroidStudio.jpg)
 
-按照 Android Studio 的建議安裝, 就是一步一步按 繼續/同意 就可以完成。
+所以最後是透過直接安裝 Android Studio 的方式來解決環境的問題, AS 基本上一步一步按 繼續/同意 就可以完成。
 
 #### 書中原作法供參考 （但 筆者不建議）
 * 安裝 JDK (Java Development Kit)
