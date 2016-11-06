@@ -27,7 +27,9 @@ npm install -g react-native-cli
 
 > HAXM v6.0.3 can only be installed via Android Studio -> SDK manager.
 
+![](AndroidStudio.jpg)
 
+按照 Android Studio 的建議安裝, 就是一步一步按 繼續/同意 就可以完成。
 
 #### 書中原作法參考 （但 筆者不建議）
 * 安裝 JDK (Java Development Kit)
