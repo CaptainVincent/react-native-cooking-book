@@ -39,6 +39,7 @@ react-native init FirstProject
 ```
 
 ### index.ios.js / index.android.js
+有提供簡單的 //註解, 解釋程式碼的運作
 ```javascript
 /**
  * Sample React Native App
