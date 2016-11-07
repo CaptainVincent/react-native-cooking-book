@@ -40,8 +40,11 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 ```
 
-之後再從 Android Studio 的 SDK manager 介面中去 launch android 原生的 sdk manager, 來安裝
+之後再從 Android Studio 的 SDK manager 介面中透過 launch android 原生的 sdk manager, 來安裝
 **Intel x86 Atom System Image (for Android 7.1.1-API 25)**, 完成後安裝的動作就告一段落了。
+
+> 筆者也不知道為啥 AS 建議安裝的包沒有含到建立虛擬機器需要用到的 image。
+
 ![](SDKmanager.jpg)
 
 之後透過 Command Line (Shel) 執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢), 這邊提供一個配置範例
