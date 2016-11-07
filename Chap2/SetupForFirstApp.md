@@ -31,7 +31,7 @@ npm install -g react-native-cli
 
 ![](AndroidStudio.jpg)
 
-所以最後是透過直接安裝 Android Studio 的方式來解決這個環境的問題, AS 基本上一步一步按 繼續/同意 就可以完成。
+所以最後是透過直接安裝 Android Studio 的方式來解決這個環境的問題, AS 基本上一步一步按 繼續/同意 就可以安裝完畢。
 
 最後將路徑加入到 bashrc file 中
 ```bash
