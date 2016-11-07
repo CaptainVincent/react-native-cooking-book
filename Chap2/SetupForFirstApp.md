@@ -42,11 +42,14 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 
 之後再從 Android Studio 的 SDK manager 介面中去 launch android 原生的 sdk manager, 來安裝
 **Intel x86 Atom System Image (for Android 7.1.1-API 25)**, 完成後安裝的動作就告一段落了。
+![](SDKmanager.jpg)
 
-之後透過 Command Line (Shel) 執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢)**
+之後透過 Command Line (Shel) 執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢), 這邊提供一個配置範例
+![](CreateAVD.jpg)
+
 
 ***
-#### 書中原作法供參考 （但 筆者不建議）
+#### 書中原作法供參考 （但 筆者本身不建議）
 * 安裝 JDK (Java Development Kit)
 * 安裝 Android SDK `brew install android-sdk`
 * 在 shell 組態檔中 export ANDROID_HOME 變數指到 sdk 的安裝路徑 (ex. export ANDROID_HOME=/usr/local/opt/android-sdk)
