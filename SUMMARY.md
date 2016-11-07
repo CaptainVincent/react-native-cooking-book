@@ -18,4 +18,4 @@
    * [ListView](Chap5/ListView.md)
    * [Navigator](Chap5/Navigator.md)
    * [平台相關元件](Chap5/PlatformDependent.md)
-
+* [樣式設定](Chap6/Style.md)
