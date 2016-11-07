@@ -38,7 +38,7 @@ react-native init FirstProject
 `-- package.json
 ```
 
-index.ios.js / index.android.js
+### index.ios.js / index.android.js
 ```javascript
 /**
  * Sample React Native App
