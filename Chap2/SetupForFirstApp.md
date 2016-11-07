@@ -14,7 +14,7 @@ npm install -g react-native-cli
 ```
 
 ## iOS 相依
-根據 Apple 官網文件安裝 XCode (IDE、iOS模擬器、iOS SDK)
+根據 Apple 官網文件安裝 XCode (IDE、iOS模擬器、iOS SDK), 相較於 Android 的開發環境, 是相當直覺的建立方式。
 
 ## Android 相依
 筆者原先是採用書中的做法來進行 android 的套件安裝, 但遇到如下圖所附的問題, 模擬器無法啟動, 因為尚未安裝 HAXM (Hardware Accelerated Execution Manager)。
