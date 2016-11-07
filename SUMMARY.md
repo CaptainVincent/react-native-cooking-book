@@ -6,6 +6,7 @@
    * [Virtual DOM](Chap2/VirtualDOM.md)
    * [Setup Environment](Chap2/SetupForFirstApp.md)
    * [創建新的程式](Chap2/CreateNewApp.md)
+   * [模擬器驗證](Chap2/Emulator.md)
    * [部署到裝置](Chap2/DeployDevice.md)
 * [Weather Project](Chap3/WeatherProject.md)
    * [新增背景圖片](Chap3/AddBackgroundImg.md)
