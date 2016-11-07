@@ -19,3 +19,7 @@
 * 然後再用用 Xcode 開啟 ios 的目錄, 在左上角選擇完模擬的 Device 後按下左邊的 ▷ 按鈕, 這樣應該就能在模擬器中看到你的程式, 之後透過 ctrl + R 就可以 refresh 修改過的程式。
 
 ![](IphoneEmulator.jpg)
+
+### Andorid
+1. 先透過 Shell `android avd`, 將 AVD manager 啟動, 透過此介面將虛擬機器 start
+2. 在 project 目錄底下執行 `react-native run-android`
