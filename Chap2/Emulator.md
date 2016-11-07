@@ -14,5 +14,5 @@
 ```
 
 ### iOS
-* Shell 進入 project 的目錄底下執行 `npm start`
+* Shell 進入 project 的目錄底下執行 `npm start` (把 server 端跑起來)
 * 然後再用用 Xcode 開啟 ios 的目錄, 在左上角選擇完模擬的 Device 後按下 ▷
