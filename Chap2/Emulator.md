@@ -29,4 +29,4 @@
 
 ***
 ### [Deco IDE](https://www.decosoftware.com/)
-透過 Deco 的使用可以節省一些工作, 整合了模擬器的使用, 開啟 project 較為快速、節省空間
+透過 Deco 的使用, 可以節省一些工作, 除了整合了模擬器的使用, 開啟 project 也較為快速、節省空間
