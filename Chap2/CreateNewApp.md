@@ -5,7 +5,7 @@
 react-native init FirstProject
 ```
 
-產生的目錄結構
+產生的目錄結構, 目錄後方有 //註解 簡略註解資料夾用途。
 ```
 ./
 |-- __tests__
@@ -38,8 +38,7 @@ react-native init FirstProject
 `-- package.json
 ```
 
-目錄後方有 //註解 簡略註解資料夾用途。
-
+index.ios.js / index.android.js
 ```javascript
 /**
  * Sample React Native App
