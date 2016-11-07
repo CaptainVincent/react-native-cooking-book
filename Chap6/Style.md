@@ -1,0 +1,1 @@
+如果想要在 React Native 與 網頁應用程式間共用相同的樣式, GitHub 上有專案提供了 React Native 的網頁樣式系統 (https://github.com/js-next/react-style)
