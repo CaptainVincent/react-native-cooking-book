@@ -51,7 +51,6 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 
 ![](CreateAVD.jpg)
 
-
 ***
 #### 書中原作法 提供參考 （但 筆者本身不建議）
 * 安裝 JDK (Java Development Kit)
