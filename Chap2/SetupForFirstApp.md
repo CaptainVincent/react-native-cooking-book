@@ -13,14 +13,16 @@ brew install flow //Facebook 的 型別檢查函式庫
 npm install -g react-native-cli
 ```
 
+***
 ## iOS 相依
-根據 Apple 官網文件安裝 XCode (IDE、iOS模擬器、iOS SDK)
+根據 Apple 官網文件安裝 XCode (IDE、iOS模擬器、iOS SDK), 相較於 Android 的開發環境, 是相當直覺的建立方式。
 
+***
 ## Android 相依
-筆者原先是採用書中的做法來進行 android 的套件安裝, 但遇到如下圖所附的問題, 模擬器無法啟動, 因為尚未安裝 HAXM (Hardware Accelerated Execution Manager)。
+筆者原先是採用書中的做法來進行 android 的套件安裝, 但最後遇到如下圖所附的問題: **模擬器無法啟動**, 因為尚未安裝 HAXM (Hardware Accelerated Execution Manager)。
 ![](StartEmulatorFail.jpg)
 
-但是從 android sdk 的 tool manager 發現目前的版本 6.0.4 尚未提供 Mac 可以安裝。
+但是從 android sdk 的 tool manager 發現目前的版本 6.0.4 尚未提供讓 Mac 可以安裝。
 ![](InstallFail.jpg)
 
 在 [StackOverflow Q&A](http://stackoverflow.com/questions/39739984/intel-haxm-6-0-4-not-compatible-with-macos), 上面提供的 work around 建議是安裝 6.0.3 的版本
@@ -29,9 +31,25 @@ npm install -g react-native-cli
 
 ![](AndroidStudio.jpg)
 
-所以最後是透過直接安裝 Android Studio 的方式來解決環境的問題, AS 基本上一步一步按 繼續/同意 就可以完成。
+所以最後是透過直接安裝 Android Studio 的方式來解決這個環境的問題, AS 基本上一步一步按 繼續/同意 就可以安裝完畢。
 
-#### 書中原作法供參考 （但 筆者不建議）
+再將環境變數的設定加入到 bashrc file 中, 讓 Shell 找得到開發工具。
+```bash
+# Android Develop
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+```
+
+之後再從 Android Studio 的 SDK manager 介面中去 launch android 原生的 sdk manager, 來安裝
+**Intel x86 Atom System Image (for Android 7.1.1-API 25)**, 完成後安裝的動作就告一段落了。
+![](SDKmanager.jpg)
+
+之後透過 Command Line (Shel) 執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢), 這邊提供一個配置範例
+![](CreateAVD.jpg)
+
+
+***
+#### 書中原作法供參考 （但 筆者本身不建議）
 * 安裝 JDK (Java Development Kit)
 * 安裝 Android SDK `brew install android-sdk`
 * 在 shell 組態檔中 export ANDROID_HOME 變數指到 sdk 的安裝路徑 (ex. export ANDROID_HOME=/usr/local/opt/android-sdk)
