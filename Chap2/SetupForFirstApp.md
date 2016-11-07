@@ -48,6 +48,7 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 ![](SDKmanager.jpg)
 
 之後透過 Command Line (Shell) 執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢), 這邊簡單提供一個配置範例
+
 ![](CreateAVD.jpg)
 
 
