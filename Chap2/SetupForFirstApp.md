@@ -1,24 +1,24 @@
 # Setup Environment
 在開始寫第一支程式前, 我們還是需要先來做開發環境的設定, 這邊以 Mac 上的操作環境為主 (如果想要同時開發 Android、iOS 的應用程式的話, 我們只能選擇 Mac)。
 
-## 先安裝 React-Native 使用到的函式庫
+### 先安裝 React-Native 使用到的函式庫
 ``` bash
 brew install node
 brew install watchman
 brew install flow //Facebook 的 型別檢查函式庫
 ```
 
-## 安裝 React-Native 的 command line tool
+### 安裝 React-Native 的 command line tool
 ``` bash
 npm install -g react-native-cli
 ```
 
 ***
-## iOS 相依
+### iOS
 根據 Apple 官網文件安裝 XCode (IDE、iOS模擬器、iOS SDK), 相較於 Android 的開發環境, 是相當直覺的建立方式。
 
 ***
-## Android 相依
+### Android
 筆者原先是採用書中的做法來進行 android 的套件安裝, 但最後遇到如下圖所附的問題: **模擬器無法啟動**, 因為尚未安裝 HAXM (Hardware Accelerated Execution Manager)。
 ![](StartEmulatorFail.jpg)
 
