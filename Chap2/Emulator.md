@@ -28,8 +28,7 @@
 2. 在 project 目錄底下執行 `react-native run-android`
 
 ![](AndroidEmulator.jpg)
-
-
+> 透過 Command ⌘ + M 可以設定讓檔案更新時, 模擬器同步更新載入。
 
 ***
 ### [Deco IDE](https://www.decosoftware.com/)
