@@ -25,31 +25,34 @@ npm install -g react-native-cli
 但是從 android sdk 的 tool manager 發現目前的版本 6.0.4 尚未提供讓 Mac 可以安裝。
 ![](InstallFail.jpg)
 
-在 [StackOverflow Q&A](http://stackoverflow.com/questions/39739984/intel-haxm-6-0-4-not-compatible-with-macos), 上面提供的 work around 建議是安裝 6.0.3 的版本
+從 [StackOverflow Q&A](http://stackoverflow.com/questions/39739984/intel-haxm-6-0-4-not-compatible-with-macos) 上面得知 work around 的建議是安裝 6.0.3 的版本, 但是 StackOverflow 上的回覆也讓我心碎
 
 > HAXM v6.0.3 can only be installed via Android Studio -> SDK manager.
 
 ![](AndroidStudio.jpg)
 
-所以最後是透過直接安裝 Android Studio 的方式來解決這個環境的問題, AS 基本上一步一步按 繼續/同意 就可以安裝完畢。
+所以最後只好回過頭來, 透過直接安裝 Android Studio 的方式來解決這個環境的問題, AS 基本上一步一步按 繼續/同意 就可以安裝完畢。
 
-再將環境變數的設定加入到 bashrc file 中, 讓 Shell 找得到開發工具。
+再將環境變數的設定加入到 .bashrc file 中, 讓 Shell 下可以找得到開發工具。
 ```bash
 # Android Develop
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 ```
 
-之後再從 Android Studio 的 SDK manager 介面中去 launch android 原生的 sdk manager, 來安裝
+之後再從 Android Studio 的 SDK manager 介面中透過 launch android 原生的 sdk manager, 來安裝
 **Intel x86 Atom System Image (for Android 7.1.1-API 25)**, 完成後安裝的動作就告一段落了。
+
+> 筆者也不知道為啥 AS 建議安裝的包沒有含到建立虛擬機器需要用到的 image。
+
 ![](SDKmanager.jpg)
 
-之後透過 Command Line (Shel) 執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢), 這邊提供一個配置範例
+之後透過 Command Line (Shell) 執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢), 這邊簡單提供一個配置範例
 ![](CreateAVD.jpg)
 
 
 ***
-#### 書中原作法供參考 （但 筆者本身不建議）
+#### 書中原作法 提供參考 （但 筆者本身不建議）
 * 安裝 JDK (Java Development Kit)
 * 安裝 Android SDK `brew install android-sdk`
 * 在 shell 組態檔中 export ANDROID_HOME 變數指到 sdk 的安裝路徑 (ex. export ANDROID_HOME=/usr/local/opt/android-sdk)
