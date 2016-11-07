@@ -1,7 +1,7 @@
 # Emulator (模擬器)
 在將程式部署到手機前, 我們可以先透過模擬器先在電腦上驗證功能, 畢竟也不是每個人都有那麼多隻手機可以當作開發機, 再者部署到裝置的流程也較為複雜。
 
-這邊一樣使用 `react-native init FirstProject` 創建的資料夾來示範
+這邊一樣使用 `react-native init FirstProject` 創建的資料夾來示範, 結構如下
 
 ```
 ./
@@ -29,3 +29,4 @@
 
 ***
 ### [Deco IDE](https://www.decosoftware.com/)
+Deco
