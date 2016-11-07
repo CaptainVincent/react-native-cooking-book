@@ -26,3 +26,6 @@
 1. 先透過 Shell `android avd`, 將 AVD manager 啟動, 透過此介面將虛擬機器 start
 2. 在 project 目錄底下執行 `react-native run-android`
 ![](AndroidEmulator.jpg)
+
+***
+### Deco
