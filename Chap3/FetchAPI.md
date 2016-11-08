@@ -179,6 +179,7 @@ const styles = StyleSheet.create({
 export default WeatherProject;
 ```
 
+### JSON 格式的回傳資料
 ```json
 { coord: { lon: 24, lat: 60.08 },
   weather: [ { id: 600, main: 'Snow', description: 'light snow', icon: '13n' } ],
