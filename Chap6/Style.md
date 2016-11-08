@@ -51,6 +51,36 @@ var bold = {
 ```
 
 #### 透過屬性接收樣式物件
+```javascript
+class Sample extends Component {
+  propTypes: {
+    style: Text.propTypes.Style
+  },
+  
+  getDefaultProps(){
+    return{
+      style: {}
+    };
+  },
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+          Welcome to React Native!
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit index.ios.js
+        </Text>
+        <Text style={styles.instructions}>
+          Press Cmd+R to reload,{'\n'}
+          Cmd+D or shake for dev menu
+        </Text>
+      </View>
+    );
+  }
+}
+```
 
 ## 管理樣式
 常見的做法是為元件建立單一目錄, 包含了 **元件** 與 **該元件使用的樣式**
