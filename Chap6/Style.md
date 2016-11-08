@@ -50,5 +50,7 @@ var bold = {
 <View style={[style.button, this.state.touching && styles.highlight]}/>
 ```
 
+#### 透過屬性接收樣式物件
+
 ## 管理樣式
 常見的做法是為元件建立單一目錄, 包含了 **元件** 與 **該元件使用的樣式**
