@@ -178,3 +178,29 @@ const styles = StyleSheet.create({
 
 export default WeatherProject;
 ```
+
+```json
+{ coord: { lon: 24, lat: 60.08 },
+  weather: [ { id: 600, main: 'Snow', description: 'light snow', icon: '13n' } ],
+  base: 'stations',
+  main: 
+   { temp: 23,
+     pressure: 1013,
+     humidity: 79,
+     temp_min: 23,
+     temp_max: 23 },
+  visibility: 7000,
+  wind: { speed: 17.22, deg: 30 },
+  clouds: { all: 75 },
+  dt: 1478627400,
+  sys: 
+   { type: 1,
+     id: 5019,
+     message: 0.0082,
+     country: 'FI',
+     sunrise: 1478585238,
+     sunset: 1478614047 },
+  id: 656653,
+  name: 'Ingå',
+  cod: 200 }
+```
