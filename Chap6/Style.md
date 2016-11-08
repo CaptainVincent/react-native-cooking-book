@@ -8,3 +8,10 @@
 
 
 ### 樣式物件
+以下介紹的寫法都是樣式物件的衍伸。
+
+```javascript
+<Text>
+  The quick <Text style={{fontStyle: "italic"}}>brown</Text> fox jumped over the lazy <Text style={{fontWeight: "bold"}}>dog</Text>.
+</Text>
+```
