@@ -155,5 +155,4 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('Project', () => Project);
-
 ```
