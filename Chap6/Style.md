@@ -16,4 +16,4 @@
   The quick <Text style={{fontStyle: "italic"}}>brown</Text> fox jumped over the lazy <Text style={{fontWeight: "bold"}}>dog</Text>.
 </Text>
 ```
-> {{fontStyle: "italic"}} 為一個物件傳遞給 style 屬性。
+> {{fontStyle: "italic"}} 其實為一個物件, 將它傳遞給 style 屬性。
