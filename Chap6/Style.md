@@ -45,4 +45,8 @@ var bold = {
 可以 **傳入物件陣列** 以及 **使用行內樣式**
 
 #### 條件樣式
-
+```html
+<TEXT style={[styles.type1, styles.type2, {color: '#FFFFFF'}]}>
+  context.
+</TEXT>
+```
