@@ -101,7 +101,7 @@ Component Name
 
 ## Layout (flexbox)
 Flexbox 屬性
-* flex //代表元件的份量
+* flex //代表元件佔相同層級中的份量 (比例)
 * flexDirection
 * flexWrap
 * alignSelf
