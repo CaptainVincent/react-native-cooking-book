@@ -36,3 +36,10 @@ var bold = {
 **使用 Stylesheet.Create**
 
 可以參考之前出現過數次的範例程式, 主要的功用是將樣式物件封裝成內部物件, 確保其 **不可以變** 與 **不透明** 的特性。
+
+**樣式合併**
+```html
+<TEXT style={[styles.type1, styles.type2, {color: '#FFFFFF'}]}>
+  context.
+</TEXT>
+```
