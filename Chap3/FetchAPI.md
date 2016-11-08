@@ -34,4 +34,6 @@
 ```
 
 ### Integration OpenWeatherMap API
-因為 OpenWeatherMap 的 API 已經改成需要透過註冊取得免費的 APPKEY, 之後才能存取資料, 所以這裡就先省略跳過進階整合的示範 (主要是將回傳的 JSON 資料導入 JSON  格式的容器中, 再取出來對內部資料設定而已)。
+主要是將回傳的 JSON 資料導入 JSON  格式的容器中, 再取出來對內部資料設定。
+
+### WeatherProject.js
