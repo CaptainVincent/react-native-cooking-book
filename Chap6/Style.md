@@ -99,4 +99,4 @@ Component Name
 ```
 > 共同樣式可以引入 ex. 調色盤、字型、標準邊寬 ...etc。
 
-## Layout
+## Layout (flexbox)
