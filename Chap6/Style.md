@@ -10,7 +10,7 @@
 ### 樣式物件
 以下介紹的寫法都是樣式物件的衍伸。
 
-**行內樣式**
+#### 行內樣式
 ```html
 <Text>
   The quick <Text style={{fontStyle: "italic"}}>brown</Text> fox jumped over the lazy <Text style={{fontWeight: "bold"}}>dog</Text>.
@@ -18,7 +18,7 @@
 ```
 > {{fontStyle: "italic"}} 其實為一個物件, 將它傳遞給 style 屬性。
 
-**樣式物件**
+#### 樣式物件
 ```html
 var italic = {
   fontStyle: "italic"
@@ -33,13 +33,13 @@ var bold = {
 </Text>
 ```
 
-**使用 Stylesheet.Create**
-
+#### 使用 Stylesheet.Create
 可以參考之前出現過數次的範例程式, 主要的功用是將樣式物件封裝成內部物件, 確保其 **不可以變** 與 **不透明** 的特性。
 
-**樣式合併**
+#### 樣式合併
 ```html
 <TEXT style={[styles.type1, styles.type2, {color: '#FFFFFF'}]}>
   context.
 </TEXT>
 ```
+可以 **傳入物件陣列** 以及 **使用行內樣式**
