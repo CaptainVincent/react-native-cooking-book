@@ -100,3 +100,9 @@ Component Name
 > 共同樣式可以引入 ex. 調色盤、字型、標準邊寬 ...etc。
 
 ## Layout (flexbox)
+Flexbox 屬性
+* flex
+* flexDirection
+* flexWrap
+* alignSelf
+* alignItems
