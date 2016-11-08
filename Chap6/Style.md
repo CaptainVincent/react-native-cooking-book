@@ -156,6 +156,6 @@ const styles = StyleSheet.create({
 
 AppRegistry.registerComponent('Project', () => Project);
 ```
-
+12
 ### Result
 ![](Flexbox.jpg)
