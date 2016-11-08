@@ -37,16 +37,15 @@ var bold = {
 可以參考之前出現過數次的範例程式, 主要的功用是將樣式物件封裝成內部物件, 確保其 **不可以變** 與 **不透明** 的特性。
 
 #### 樣式合併
+可以 **傳入物件陣列** 以及 **使用行內樣式**
 ```html
 <TEXT style={[styles.type1, styles.type2, {color: '#FFFFFF'}]}>
   context.
 </TEXT>
 ```
-可以 **傳入物件陣列** 以及 **使用行內樣式**
 
 #### 條件樣式
+可以使用條件樣式, 讓元件狀態改變時 (這邊例子是當觸碰到時) 使用額外樣式
 ```html
-<View style={[styles.type1, styles.type2, {color: '#FFFFFF'}]}>
-  context.
-</TEXT>
+<View style={[style.button, this.state.touching && styles.highlight]}/>
 ```
