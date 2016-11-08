@@ -32,3 +32,7 @@ var bold = {
   The quick <Text style={italic}>brown</Text> fox jumped over the lazy <Text style={bold}>dog</Text>.
 </Text>
 ```
+
+**使用 Stylesheet.Create**
+
+可以參考之前出現過數次的範例程式, 主要的功用是將樣式物件封裝成內部物件, 確保其 不可以變 與 不透明 的特性。
