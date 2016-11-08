@@ -75,3 +75,9 @@ class Sample extends Component {
 
 ## 管理樣式
 常見的做法是為元件建立單一目錄, 包含了 **元件** 與 **該元件使用的樣式**
+```
+Component Name
+./
+|-- index.js
+|-- styles.js
+```
