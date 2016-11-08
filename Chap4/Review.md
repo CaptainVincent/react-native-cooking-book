@@ -12,7 +12,7 @@
 透過其他標籤說明文字樣式。
 
 **React Native version**
-```javascript
+```html
 <Text>
   The quick <Text style={{fontStyle: "italic"}}>brown</Text> fox jumped over the lazy <Text style={{fontWeight: "bold"}}>dog</Text>.
 </Text>
