@@ -49,3 +49,5 @@ var bold = {
 ```html
 <View style={[style.button, this.state.touching && styles.highlight]}/>
 ```
+
+## 管理樣式
