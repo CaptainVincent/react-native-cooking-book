@@ -106,3 +106,54 @@ Flexbox 屬性
 * flexWrap
 * alignSelf
 * alignItems
+
+### index.ios.js
+```javascript
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
+
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
+
+class Project extends Component {
+  render() {
+    return (
+      <View style={styles.parent}>
+        <Text style={styles.child}> Child One </Text>
+        <Text style={styles.child}> Child Two </Text>
+        <Text style={styles.child}> Child Three </Text>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  parent: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+    borderColor: '#0099AA',
+    borderWidth: 5,
+    marginTop: 30,
+  },
+  child: {
+    flex: 1,
+    backgroundColor: '#AA0099',
+    borderWidth: 2,
+    textAlign: 'center',
+    fontSize: 24,
+  },
+});
+
+AppRegistry.registerComponent('Project', () => Project);
+
+```
