@@ -46,7 +46,7 @@ var bold = {
 
 #### 條件樣式
 ```html
-<TEXT style={[styles.type1, styles.type2, {color: '#FFFFFF'}]}>
+<View style={[styles.type1, styles.type2, {color: '#FFFFFF'}]}>
   context.
 </TEXT>
 ```
