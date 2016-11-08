@@ -75,6 +75,7 @@ class Sample extends Component {
 
 ## 管理樣式
 常見的做法是為元件建立單一目錄, 包含了 **元件** 與 **該元件使用的樣式**
+
 ```
 Component Name
 ./
@@ -83,3 +84,16 @@ Component Name
 ```
 
 如同 TEXT/IMG 章節提到的, React Native 中偏好使用重複的 **樣式元件**, 而非重複的使用 **樣式**, 但凡事還是有例外, 當如果需要共用樣式時建議專案的結構如下。
+
+```
+./
+|-- Component
+|   |-- Button
+|       |-- index.js
+|        `-- styles.js
+|
+|-- styles
+|   |-- styles.js
+|   |-- colors.js
+|   |-- fonts.js
+```
