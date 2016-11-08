@@ -11,9 +11,24 @@
 以下介紹的寫法都是樣式物件的衍伸。
 
 **行內樣式**
-```javascript
+```html
 <Text>
   The quick <Text style={{fontStyle: "italic"}}>brown</Text> fox jumped over the lazy <Text style={{fontWeight: "bold"}}>dog</Text>.
 </Text>
 ```
 > {{fontStyle: "italic"}} 其實為一個物件, 將它傳遞給 style 屬性。
+
+**樣式物件**
+```html
+var italic = {
+  fontStyle: "italic"
+};
+
+var bold = {
+  fontWeight: "bold"
+}
+
+<Text>
+  The quick <Text style={italic}>brown</Text> fox jumped over the lazy <Text style={bold}>dog</Text>.
+</Text>
+```
