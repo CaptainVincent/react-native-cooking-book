@@ -101,7 +101,7 @@ Component Name
 
 ## Layout (flexbox)
 Flexbox 屬性
-* flex
+* flex //代表元件的份量
 * flexDirection
 * flexWrap
 * alignSelf
@@ -156,3 +156,6 @@ const styles = StyleSheet.create({
 
 AppRegistry.registerComponent('Project', () => Project);
 ```
+
+### Result
+![](Flexbox.jpg)
