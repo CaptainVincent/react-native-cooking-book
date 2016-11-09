@@ -174,7 +174,7 @@ export default Forecast;
 ```
 
 ### weather_project.js
-
+接下來的程式碼比較複雜, 將說明直接註解在程式碼內文。
 ```javascript
 import React, {Component} from 'react';
 import {
