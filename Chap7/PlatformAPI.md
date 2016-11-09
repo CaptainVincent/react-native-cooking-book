@@ -82,6 +82,7 @@ export default styles;
 ### Forecast
 **Forecast/index.js**
 
+跟 WeatherProject 版本的相差不多, 唯一的不同就是把 style 抽出去
 ```javascript
 import React, {
   Component,
