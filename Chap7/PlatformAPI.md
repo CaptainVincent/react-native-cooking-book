@@ -79,6 +79,9 @@ const styles = StyleSheet.create({
 export default styles;
 ```
 
+### LocationButton
+**LocationButton/index.js**
+
 ### Forecast
 **Forecast/index.js**
 
