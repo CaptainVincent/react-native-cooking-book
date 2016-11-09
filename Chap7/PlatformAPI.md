@@ -194,6 +194,7 @@ const STORAGE_KEY = '@SmarterWeather:zip';
 
 const WEATHER_API_KEY = 'bbeb34ebf60ad50f7893e7440a1e2b0b';
 const API_STEM = 'http://api.openweathermap.org/data/2.5/weather?';
+// OpenWeather API 所需
 
 // This version uses flowers.png from local assets
 // import PhotoBackdrop from './PhotoBackdrop/local_image';
