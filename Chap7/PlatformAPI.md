@@ -23,7 +23,7 @@
 ```
 
 ### Button
-**index.js**
+**Button/index.js**
 
 宣告 Button component
 ```javascript
