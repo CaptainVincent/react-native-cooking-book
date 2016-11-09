@@ -82,6 +82,9 @@ export default styles;
 ### LocationButton
 **LocationButton/index.js**
 
+[MDN reference](https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation/getCurrentPosition), 
+
+> navigator.geolocation.getCurrentPosition(success[, error[, options]])
 ```javascript
 import React, {
   Component,
