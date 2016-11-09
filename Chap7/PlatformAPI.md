@@ -61,7 +61,7 @@ class Button extends Component {
 export default Button;
 ```
 
-**styles.js**
+**Button/styles.js**
 
 ```javascript
 import { StyleSheet } from 'react-native';
