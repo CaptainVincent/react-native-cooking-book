@@ -188,6 +188,8 @@ import {
 
 import Forecast from './Forecast';
 import LocationButton from './LocationButton';
+// 使用到的元件
+
 const STORAGE_KEY = '@SmarterWeather:zip';
 const WEATHER_API_KEY = 'bbeb34ebf60ad50f7893e7440a1e2b0b';
 const API_STEM = 'http://api.openweathermap.org/data/2.5/weather?';
