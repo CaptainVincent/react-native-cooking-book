@@ -23,6 +23,7 @@
 ```
 
 ### Button/index.js
+宣告 Button component
 ```javascript
 import React, {
   Component,
