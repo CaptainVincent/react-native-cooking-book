@@ -85,6 +85,10 @@ export default styles;
 [MDN reference](https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation/getCurrentPosition), 
 
 > navigator.geolocation.getCurrentPosition(success[, error[, options]])
+> * **success** 一個回呼函式(callback function) 會被傳入一個Position 的物件。
+> * **error** (選擇性) 一個選擇性的錯誤回呼函式(callback function)，會被傳入一個 PositionError 的物件。
+> * **options** (選擇性) 一個選擇性的 PositionOptions 的物件。
+
 ```javascript
 import React, {
   Component,
