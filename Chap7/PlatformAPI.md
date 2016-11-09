@@ -81,6 +81,7 @@ export default styles;
 
 ### LocationButton
 **LocationButton/index.js**
+
 ```javascript
 import React, {
   Component,
