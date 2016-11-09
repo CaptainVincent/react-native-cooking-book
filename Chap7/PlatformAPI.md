@@ -4,7 +4,7 @@
 **程式碼的結構如下**
 ```
 ./
-|-- Buttion
+|-- Button
 |   |-- index.js
 |   `-- styles.js
 |-- Forecast
