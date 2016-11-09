@@ -90,7 +90,7 @@ Component Name
 |-- Component
 |   |-- Button
 |       |-- index.js
-|        `-- style.js
+|        `-- styles.js
 |
 |-- styles
 |   |-- styles.js
