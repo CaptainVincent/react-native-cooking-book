@@ -174,6 +174,7 @@ export default Forecast;
 ```
 
 ### weather_project.js
+
 ```javascript
 import React, {Component} from 'react';
 import {
