@@ -173,7 +173,7 @@ const forecastStyles = StyleSheet.create({
 export default Forecast;
 ```
 
-### index.ios.js
+### weather_project.js
 ```javascript
 import React, {Component} from 'react';
 import {
