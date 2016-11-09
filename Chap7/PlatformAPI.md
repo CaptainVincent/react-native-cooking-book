@@ -217,6 +217,7 @@ class WeatherProject extends Component {
     this._getForecast = this._getForecast.bind(this);
   }
 
+  // 當元件被渲染完成後會調用一次
   componentDidMount() {
     AsyncStorage.getItem(STORAGE_KEY)
       .then((value) => {
