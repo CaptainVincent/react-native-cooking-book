@@ -63,6 +63,7 @@ export default Button;
 
 **Button/styles.js**
 
+設定按鈕的外觀
 ```javascript
 import { StyleSheet } from 'react-native';
 
