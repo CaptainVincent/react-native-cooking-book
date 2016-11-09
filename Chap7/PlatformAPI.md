@@ -7,11 +7,11 @@
 |-- Button
 |   |-- index.js
 |   `-- styles.js
-|-- Forecast
-|   `-- index.js
 |-- LocationButton
 |   |-- index.js
 |   `-- styles.js
+|-- Forecast
+|   `-- index.js
 |-- PhotoBackdrop
 |   |-- camera_roll_example.js
 |   |-- flowers.png
@@ -84,7 +84,7 @@ export default styles;
 
 在按鈕按壓後, 觸發取得當前位置的 API (使用方式可以參考下面補充), 並覆寫 Button 的 style (實際上兩者定義的 style 是相同的)。
 
-[MDN reference](https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation/getCurrentPosition), 
+> [MDN reference](https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation/getCurrentPosition)
 
 > navigator.geolocation.getCurrentPosition(success[, error[, options]])
 > * **success** 一個回呼函式(callback function) 會被傳入一個Position 的物件。
@@ -172,3 +172,4 @@ const forecastStyles = StyleSheet.create({
 
 export default Forecast;
 ```
+
