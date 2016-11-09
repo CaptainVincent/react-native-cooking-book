@@ -82,7 +82,7 @@ export default styles;
 ### LocationButton
 **LocationButton/index.js**
 
-在按鈕按壓後, 觸發取得當前位置的 API (使用方式可以參考下面補充), 並覆寫 Button 的 style (實際上兩者定義的 style 是相同的)。
+在按鈕按壓後, 觸發取得當前位置的 API (使用方式可以參考下面補充, 從 Web API 延伸無須 import 即可使用), 並覆寫 Button 的 style (實際上兩者定義的 style 是相同的)。
 
 > [MDN reference](https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation/getCurrentPosition)
 
