@@ -78,3 +78,6 @@ const styles = StyleSheet.create({
 
 export default styles;
 ```
+
+### Forecast
+**Forecast/index.js**
