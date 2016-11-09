@@ -7,11 +7,11 @@
 |-- Button
 |   |-- index.js
 |   `-- styles.js
-|-- Forecast
-|   `-- index.js
 |-- LocationButton
 |   |-- index.js
 |   `-- styles.js
+|-- Forecast
+|   `-- index.js
 |-- PhotoBackdrop
 |   |-- camera_roll_example.js
 |   |-- flowers.png
@@ -172,3 +172,4 @@ const forecastStyles = StyleSheet.create({
 
 export default Forecast;
 ```
+
