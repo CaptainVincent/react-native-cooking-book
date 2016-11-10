@@ -1,6 +1,9 @@
 # 使用 Device 相關的 API
 書中這章節將藉由原先的 WeatherProject 衍伸的 SmartWeather 來做範例, 示範以下存取裝置的 API 如何使用, 這邊會直接解說程式碼一邊介紹。
 
+* AsyncStorage
+* CameraRoll
+
 **程式碼的結構如下**
 ```
 ./
@@ -394,6 +397,8 @@ export default PhotoBackdrop;
 > 在使用 CameraRoll 的 API 前需要先 link CameraRoll 的 library, 可參考 [React Native link Library](https://facebook.github.io/react-native/docs/linking-libraries-ios.html) 教學, 按照上面指示就可以順利連結。
 > 
 > Library Path: SmartWeather/node_modules/react-native/Libraries/CameraRoll
+
+
 
 ```javascript
 import React, {
