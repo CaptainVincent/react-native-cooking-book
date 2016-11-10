@@ -103,6 +103,7 @@ import styles from './styles';
 
 class LocationButton extends Component {
   propTypes: {
+    // 由外部傳入必要的屬性
     onGetCoords: React.PropTypes.func.isRequired
   }
 
