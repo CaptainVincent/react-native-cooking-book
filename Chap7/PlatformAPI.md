@@ -25,7 +25,7 @@
 ### Button
 **Button/index.js**
 
-宣告 Button component, 透過屬性的設定來決定 onPress 的行為 以及 渲染在元件上的文字
+宣告 Button component, 透過屬性的設定來決定 onPress 的行為 以及 渲染在元件上的文字。
 ```javascript
 import React, {
   Component,
@@ -63,7 +63,7 @@ export default Button;
 
 **Button/styles.js**
 
-設定按鈕的外觀
+設定按鈕的外觀。
 ```javascript
 import { StyleSheet } from 'react-native';
 
@@ -82,7 +82,7 @@ export default styles;
 ### LocationButton
 **LocationButton/index.js**
 
-在按鈕按壓後, 觸發取得當前位置的 API (使用方式可以參考下面補充, 從 Web API 延伸無須 import 即可使用), 並覆寫 Button 的 style (實際上兩者定義的 style 是相同的)。
+在按鈕按壓後, 觸發取得當前位置的 API (使用方式可以參考下面補充, 從 Web API 延伸無須 import 即可使用), 並覆寫 Button 的 style (實際上兩者定義的 styles.js 內容是相同的)。
 
 > [MDN reference](https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation/getCurrentPosition)
 
@@ -103,10 +103,12 @@ import styles from './styles';
 
 class LocationButton extends Component {
   propTypes: {
+    // 由外部傳入必要的屬性
     onGetCoords: React.PropTypes.func.isRequired
   }
 
   _onPress() {
+    // 呼叫實作 react 實作 MDN 標準介面的 API, 並將成功回傳的 initialPosition 資訊送給查詢天氣的 function
     navigator.geolocation.getCurrentPosition(
       (initialPosition) => {
         this.props.onGetCoords(initialPosition.coords.latitude,
@@ -132,7 +134,7 @@ export default LocationButton;
 ### Forecast
 **Forecast/index.js**
 
-跟 WeatherProject 版本的相差不多, 唯一的不同就是把 style 抽出去
+跟 WeatherProject 版本的相差不多, 唯一的不同就是把 style 抽出去。
 ```javascript
 import React, {
   Component,
@@ -342,4 +344,99 @@ const styles = StyleSheet.create({
 });
 
 export default WeatherProject;
+```
+
+### PhotoBackdrop
+這邊因為作者在 Github 提供的做法跟書本有差, 所以這裡僅以 Github 上的範例程式做說明。
+```
+./
+|-- camera_roll_example.js
+|-- flowers.png //圖片檔
+|-- index.js
+|-- local_image.js
+`-- styles.js
+```
+
+**PhotoBackdrop/local_image.js**
+
+指定 local 的圖片 PhotoBackdrop/flowers.png 為背景。
+```javascript
+import React, {
+  Component,
+} from 'react';
+
+import {
+  Image
+} from 'react-native';
+
+import styles from './styles.js';
+
+class PhotoBackdrop extends Component {
+  render() {
+    return (
+        <Image
+          style={styles.backdrop}
+          source={require('./flowers.png')}
+          resizeMode='cover'>
+          {this.props.children}
+        </Image>
+      );
+  }
+}
+
+export default PhotoBackdrop;
+```
+
+**PhotoBackdrop/local_image.js**
+
+主要是指定 this.state.photoSource 作為背景圖片, 而 photoSource 的來源是透過 CameraRoll 的 API 取得。
+
+> 在使用 CameraRoll 的 API 前需要先 link CameraRoll 的 library, 可參考 [React Native link Library](https://facebook.github.io/react-native/docs/linking-libraries-ios.html) 教學, 按照上面指示就可以順利連結。
+> 
+> Library Path: SmartWeather/node_modules/react-native/Libraries/CameraRoll
+
+```javascript
+import React, {
+  Component,
+} from 'react';
+
+import {
+  Image,
+  CameraRoll
+} from 'react-native';
+
+import styles from './styles';
+
+var PhotoBackdrop = React.createClass({
+  getInitialState() {
+    return {
+      photoSource: null
+    }
+  },
+
+  componentDidMount() {
+    CameraRoll.getPhotos(
+      {first: 5},
+      (data) => {
+        this.setState({
+          photoSource: {uri: data.edges[3].node.image.uri}
+        })},
+      (error) => {
+        console.warn(error);
+      });
+  },
+
+  render() {
+    return (
+      <Image
+        style={styles.backdrop}
+        source={ this.state.photoSource }
+        resizeMode='cover'>
+        {this.props.children}
+      </Image>
+      );
+  }
+});
+
+export default PhotoBackdrop;
 ```
