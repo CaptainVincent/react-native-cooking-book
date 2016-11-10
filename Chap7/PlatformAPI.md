@@ -355,7 +355,8 @@ export default WeatherProject;
 `-- styles.js
 ```
 
-```
+**PhotoBackdrop/local_image.js**
+```javascript
 import React, {
   Component,
 } from 'react';
