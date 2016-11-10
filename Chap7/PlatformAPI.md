@@ -422,6 +422,7 @@ var PhotoBackdrop = React.createClass({
 
   componentDidMount() {
     CameraRoll.getPhotos(
+      //getPhotosParamChecker 用的參數, 會根據這個設定產生對應需求的回傳 data
       {first: 5},
       (data) => {
         this.setState({
