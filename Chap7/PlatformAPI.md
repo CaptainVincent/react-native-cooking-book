@@ -63,7 +63,7 @@ export default Button;
 
 **Button/styles.js**
 
-設定按鈕的外觀
+設定按鈕的外觀。
 ```javascript
 import { StyleSheet } from 'react-native';
 
@@ -134,7 +134,7 @@ export default LocationButton;
 ### Forecast
 **Forecast/index.js**
 
-跟 WeatherProject 版本的相差不多, 唯一的不同就是把 style 抽出去
+跟 WeatherProject 版本的相差不多, 唯一的不同就是把 style 抽出去。
 ```javascript
 import React, {
   Component,
