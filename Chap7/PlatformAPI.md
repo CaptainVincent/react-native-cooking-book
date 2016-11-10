@@ -386,3 +386,8 @@ class PhotoBackdrop extends Component {
 
 export default PhotoBackdrop;
 ```
+
+**PhotoBackdrop/local_image.js**
+
+```javascript
+```
