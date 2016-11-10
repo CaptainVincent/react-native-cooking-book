@@ -359,7 +359,7 @@ export default WeatherProject;
 
 **PhotoBackdrop/local_image.js**
 
-指定 local 的圖片 PhotoBackdrop/flowers.png
+指定 local 的圖片 PhotoBackdrop/flowers.png 為背景。
 ```javascript
 import React, {
   Component,
