@@ -229,18 +229,21 @@ class WeatherProject extends Component {
       .done();
   }
 
+  // 被呼叫的同時透過 AsyncStorage 先存放這次查找的 ZIP
   _getForecastForZip(zip) {
     // Store zip code
     AsyncStorage.setItem(STORAGE_KEY, zip)
       .then(() => console.log('Saved selection to disk: ' + zip))
       .catch((error) => console.log('AsyncStorage error: ' + error.message))
       .done();
-
+    
+    // 呼叫查找天氣的 API, 並送出透過郵遞區號查找的網址
     this._getForecast(
       `${API_STEM}q=${zip}&units=imperial&APPID=${WEATHER_API_KEY}`);
   }
 
   _getForecastForCoords(lat, lon) {
+    // 呼叫查找天氣的 API, 並送出透過座標查找的網址
     this._getForecast(
       `${API_STEM}lat=${lat}&lon=${lon}&units=imperial&APPID=${WEATHER_API_KEY}`);
   }
