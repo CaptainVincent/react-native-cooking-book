@@ -449,3 +449,5 @@ var PhotoBackdrop = React.createClass({
 
 export default PhotoBackdrop;
 ```
+
+**PhotoBackdrop/index.js**
