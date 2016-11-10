@@ -3,6 +3,7 @@
 
 * AsyncStorage
 * CameraRoll
+* navigator.geolocation
 
 **程式碼的結構如下**
 ```
