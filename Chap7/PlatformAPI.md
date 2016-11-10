@@ -389,7 +389,10 @@ export default PhotoBackdrop;
 
 **PhotoBackdrop/local_image.js**
 
-主要是指定 this.state.photoSource 作為背景圖片, 而 photoSource 的來源是透過 CameraRoll 的 API 取得
+主要是指定 this.state.photoSource 作為背景圖片, 而 photoSource 的來源是透過 CameraRoll 的 API 取得。
+
+> 在使用 CameraRoll 的 API 前需要先 link CameraRoll 的 library, 可參考 [React Native link Library](https://facebook.github.io/react-native/docs/linking-libraries-ios.html) 教學, 按照上面指示就可以順利連結, Library Path: SmartWeather/node_modules/react-native/Libraries/CameraRoll
+
 ```javascript
 import React, {
   Component,
