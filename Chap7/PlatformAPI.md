@@ -272,6 +272,7 @@ class WeatherProject extends Component {
     this._getForecastForZip(zip);
   }
 
+  // 以下的部分跟原先 WeatherProject 雷同
   render() {
     var content = null;
     if (this.state.forecast !== null) {
