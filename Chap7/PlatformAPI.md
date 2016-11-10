@@ -272,7 +272,7 @@ class WeatherProject extends Component {
     this._getForecastForZip(zip);
   }
 
-  // 以下的部分跟原先 WeatherProject 雷同
+  // 以下的部分跟原先 WeatherProject 雷同, 除了新增透過 PhotoBackdrop 元件來決定背景圖片
   render() {
     var content = null;
     if (this.state.forecast !== null) {
