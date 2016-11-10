@@ -25,7 +25,7 @@
 ### Button
 **Button/index.js**
 
-宣告 Button component, 透過屬性的設定來決定 onPress 的行為 以及 渲染在元件上的文字
+宣告 Button component, 透過屬性的設定來決定 onPress 的行為 以及 渲染在元件上的文字。
 ```javascript
 import React, {
   Component,
