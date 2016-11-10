@@ -349,7 +349,7 @@ export default WeatherProject;
 ```
 ./
 |-- camera_roll_example.js
-|-- flowers.png
+|-- flowers.png //圖片檔
 |-- index.js
 |-- local_image.js
 `-- styles.js
