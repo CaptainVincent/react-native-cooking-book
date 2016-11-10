@@ -266,6 +266,7 @@ class WeatherProject extends Component {
       });
   }
 
+  // 用來處理 TextInput 手動輸入郵遞區號的天氣詢問
   _handleTextChange(event) {
     var zip = event.nativeEvent.text;
     this._getForecastForZip(zip);
