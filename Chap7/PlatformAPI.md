@@ -389,7 +389,7 @@ export default PhotoBackdrop;
 
 **PhotoBackdrop/local_image.js**
 
-下方指定 this.state.photoSource 作為背景圖片,
+主要是指定 this.state.photoSource 作為背景圖片, 而 photoSource 的來源是透過 CameraRoll 的 API 取得
 ```javascript
 import React, {
   Component,
