@@ -108,7 +108,7 @@ class LocationButton extends Component {
   }
 
   _onPress() {
-    // 呼叫實作 react 實作 MDN 標準介面的 API  
+    // 呼叫實作 react 實作 MDN 標準介面的 API, 並將成功回傳的 initialPosition 資訊送給查詢天氣的 function
     navigator.geolocation.getCurrentPosition(
       (initialPosition) => {
         this.props.onGetCoords(initialPosition.coords.latitude,
