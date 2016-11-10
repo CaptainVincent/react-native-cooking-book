@@ -197,6 +197,7 @@ const WEATHER_API_KEY = 'bbeb34ebf60ad50f7893e7440a1e2b0b';
 const API_STEM = 'http://api.openweathermap.org/data/2.5/weather?';
 
 // 底下已註解的方式決定引入的 PhotoBackdrop 元件從哪一個檔案來
+
 // This version uses flowers.png from local assets
 // import PhotoBackdrop from './PhotoBackdrop/local_image';
 
