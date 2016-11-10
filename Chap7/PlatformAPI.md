@@ -353,3 +353,4 @@ export default WeatherProject;
 |-- local_image.js
 `-- styles.js
 ```
+這邊因為作者在 Github 提供的做法跟書本有差, 所以這裡僅以 Github 上的範例程式做說明。
