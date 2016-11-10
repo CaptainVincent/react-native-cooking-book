@@ -108,6 +108,7 @@ class LocationButton extends Component {
   }
 
   _onPress() {
+    // 呼叫實作 react 實作 MDN 標準介面的 API  
     navigator.geolocation.getCurrentPosition(
       (initialPosition) => {
         this.props.onGetCoords(initialPosition.coords.latitude,
