@@ -429,6 +429,7 @@ var PhotoBackdrop = React.createClass({
         this.setState({
           photoSource: {uri: data.edges[3].node.image.uri}
         })},
+      // Error 的 callback
       (error) => {
         console.warn(error);
       });
