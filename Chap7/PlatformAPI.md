@@ -189,13 +189,14 @@ import {
 import Forecast from './Forecast';
 import LocationButton from './LocationButton';
 
-const STORAGE_KEY = '@SmarterWeather:zip';
 // 使用 AsyncStorage 存取資料下的 key 值, 可以透過 key 存取 value, key 常見的形式為 @AppName:KeyName
+const STORAGE_KEY = '@SmarterWeather:zip';
 
+// OpenWeather API 所需
 const WEATHER_API_KEY = 'bbeb34ebf60ad50f7893e7440a1e2b0b';
 const API_STEM = 'http://api.openweathermap.org/data/2.5/weather?';
-// OpenWeather API 所需
 
+// 底下已註解的方式決定引入的 PhotoBackdrop 元件從哪一個檔案來
 // This version uses flowers.png from local assets
 // import PhotoBackdrop from './PhotoBackdrop/local_image';
 
