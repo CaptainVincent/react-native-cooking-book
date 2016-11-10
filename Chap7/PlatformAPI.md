@@ -248,6 +248,7 @@ class WeatherProject extends Component {
       `${API_STEM}lat=${lat}&lon=${lon}&units=imperial&APPID=${WEATHER_API_KEY}`);
   }
 
+  // 查找的 API, 從傳入的網址取得 JSON 格式的資料存入 forecast 物件中
   _getForecast(url, cb) {
     fetch(url)
       .then((response) => response.json())
