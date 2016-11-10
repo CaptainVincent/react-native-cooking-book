@@ -389,6 +389,7 @@ export default PhotoBackdrop;
 
 **PhotoBackdrop/local_image.js**
 
+下方指定 this.state.photoSource 作為背景圖片,
 ```javascript
 import React, {
   Component,
