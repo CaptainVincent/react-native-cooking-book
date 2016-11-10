@@ -345,3 +345,11 @@ export default WeatherProject;
 ```
 
 ### PhotoBackdrop
+```
+./
+|-- camera_roll_example.js
+|-- flowers.png
+|-- index.js
+|-- local_image.js
+`-- styles.js
+```
