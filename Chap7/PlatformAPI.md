@@ -404,8 +404,6 @@ export default PhotoBackdrop;
 > 
 > Library Path: SmartWeather/node_modules/react-native/Libraries/CameraRoll
 
-
-
 ```javascript
 import React, {
   Component,
