@@ -484,7 +484,8 @@ class PhotoBackdrop extends Component {
 
   _pickImage() {
     // See https://github.com/marcshilling/react-native-image-picker#usage
-
+    
+    // 彈出的選單內容, 底下字面上的說明還滿清楚的
     var options = {
       title: 'Select Image',
       cancelButtonTitle: 'Cancel',
