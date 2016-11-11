@@ -495,6 +495,7 @@ class PhotoBackdrop extends Component {
       mediaType: 'photo' // 'photo' or 'video'
     };
 
+    // 兩個參數, 第一個是供客製化的 option 選項 (null 的話則會以 default 的選單產生), 另一個是 callback
     ImagePicker.showImagePicker(
       options,
       (response) => {
