@@ -511,6 +511,7 @@ class PhotoBackdrop extends Component {
           console.log('ImagePicker error: ', response.error);
         }
         else {
+          // 替換選取到圖片的 uri
           var source;
           if (Platform.OS === 'ios') {
             source = {uri: response.uri.replace('file://', ''), isStatic: true};
