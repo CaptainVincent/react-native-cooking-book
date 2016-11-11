@@ -459,6 +459,8 @@ export default PhotoBackdrop;
 
 這邊使用到 [react-native-image-picker](https://github.com/marcshilling/react-native-image-picker) 這個模組, 可以參考 Github 上的模組安裝方式, 原則上 iOS 跟 CameraRoll 雷同。
 
+> react-native-image-picker 這邊範例有提供從 camera 照相的選項, 但實際上模擬器無法測試, 只能透過 Device 來驗證。
+
 ```javascript
 import React, {
   Component,
