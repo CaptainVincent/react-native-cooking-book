@@ -398,7 +398,7 @@ export default PhotoBackdrop;
 
 **PhotoBackdrop/local_image.js**
 
-主要是指定 this.state.photoSource 作為背景圖片, 而 photoSource 的來源是透過 CameraRoll 的 getPhotos 取得, 使用方式可以參考程式碼中筆者添加的註解 並對應 CameraRoll.js 原始碼。
+主要是指定 this.state.photoSource 作為背景圖片, 而 photoSource 的來源是透過 CameraRoll 的 getPhotos 取得, 使用方式可以參考程式碼中筆者添加的註解 並對應 CameraRoll.js 原始碼。(目前似乎仍只支援 iOS)
 
 > 在使用 CameraRoll 的 API 前需要先 link CameraRoll 的 library, 可參考 [React Native link Library](https://facebook.github.io/react-native/docs/linking-libraries-ios.html) 教學, 按照上面指示就可以順利連結。
 > 
