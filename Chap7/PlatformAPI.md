@@ -459,7 +459,10 @@ export default PhotoBackdrop;
 
 此 Demo Code 在 Github 上的版本已經與書中的差異滿多, 這邊就以 Github 的為主介紹。
 
-這邊使用到 [react-native-image-picker](https://github.com/marcshilling/react-native-image-picker) 這個模組, 可以參考 Github 上的模組安裝方式, 原則上 iOS 跟 CameraRoll 雷同
+這邊使用到 [react-native-image-picker](https://github.com/marcshilling/react-native-image-picker) 這個模組, 可以參考 Github 上的模組安裝方式, 原則上 iOS 跟 CameraRoll 雷同。
+
+
+
 ```javascript
 import React, {
   Component,
@@ -495,7 +498,7 @@ class PhotoBackdrop extends Component {
       mediaType: 'photo' // 'photo' or 'video'
     };
 
-    // 兩個參數, 第一個是供客製化的 option 選項 (null 的話則會以 default 的選單產生), 另一個是 callback
+    // 兩個參數, 第一個是供客製化的 option 選項 (null 的話則會以 default 的選單產生), 另一個是 callback 收到 response 要如何處理
     ImagePicker.showImagePicker(
       options,
       (response) => {
@@ -539,3 +542,4 @@ class PhotoBackdrop extends Component {
 
 export default PhotoBackdrop;
 ```
+
