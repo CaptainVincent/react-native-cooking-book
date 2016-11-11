@@ -398,13 +398,11 @@ export default PhotoBackdrop;
 
 **PhotoBackdrop/local_image.js**
 
-主要是指定 this.state.photoSource 作為背景圖片, 而 photoSource 的來源是透過 CameraRoll 的 getPhotos 取得, 使用方式可以參考程式碼中筆者添加的註解 並對應 CameraRoll.js 原始碼。
+主要是指定 this.state.photoSource 作為背景圖片, 而 photoSource 的來源是透過 CameraRoll 的 getPhotos 取得, 使用方式可以參考程式碼中筆者添加的註解 並對應 CameraRoll.js 原始碼。(目前似乎仍只支援 iOS)
 
 > 在使用 CameraRoll 的 API 前需要先 link CameraRoll 的 library, 可參考 [React Native link Library](https://facebook.github.io/react-native/docs/linking-libraries-ios.html) 教學, 按照上面指示就可以順利連結。
 > 
 > Library Path: SmartWeather/node_modules/react-native/Libraries/CameraRoll
-
-
 
 ```javascript
 import React, {
@@ -458,6 +456,11 @@ export default PhotoBackdrop;
 **PhotoBackdrop/index.js**
 
 此 Demo Code 在 Github 上的版本已經與書中的差異滿多, 這邊就以 Github 的為主介紹。
+
+這邊使用到 [react-native-image-picker](https://github.com/marcshilling/react-native-image-picker) 這個模組, 可以參考 Github 上的模組安裝方式, 原則上 iOS 跟 CameraRoll 雷同。
+
+> react-native-image-picker 這邊範例有提供從 camera 照相的選項, 但實際上模擬器無法測試, 只能透過 Device 來驗證。
+
 ```javascript
 import React, {
   Component,
@@ -482,7 +485,8 @@ class PhotoBackdrop extends Component {
 
   _pickImage() {
     // See https://github.com/marcshilling/react-native-image-picker#usage
-
+    
+    // 彈出的選單內容, 底下字面上的說明還滿清楚的
     var options = {
       title: 'Select Image',
       cancelButtonTitle: 'Cancel',
@@ -492,6 +496,7 @@ class PhotoBackdrop extends Component {
       mediaType: 'photo' // 'photo' or 'video'
     };
 
+    // 兩個參數, 第一個是供客製化的 option 選項 (null 的話則會以 default 的選單產生), 另一個是 callback 收到 response 要如何處理
     ImagePicker.showImagePicker(
       options,
       (response) => {
@@ -504,6 +509,7 @@ class PhotoBackdrop extends Component {
           console.log('ImagePicker error: ', response.error);
         }
         else {
+          // 替換選取到圖片的 uri
           var source;
           if (Platform.OS === 'ios') {
             source = {uri: response.uri.replace('file://', ''), isStatic: true};
@@ -535,3 +541,4 @@ class PhotoBackdrop extends Component {
 
 export default PhotoBackdrop;
 ```
+
