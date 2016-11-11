@@ -83,6 +83,7 @@ const styles = StyleSheet.create({
 export default styles;
 ```
 
+***
 ### LocationButton
 **LocationButton/index.js**
 
@@ -140,6 +141,7 @@ class LocationButton extends Component {
 export default LocationButton;
 ```
 
+***
 ### Forecast
 **Forecast/index.js**
 
@@ -184,6 +186,7 @@ const forecastStyles = StyleSheet.create({
 export default Forecast;
 ```
 
+***
 ### weather_project.js
 接下來的程式碼比較複雜, 將說明直接註解在程式碼內文。
 ```javascript
@@ -355,6 +358,7 @@ const styles = StyleSheet.create({
 export default WeatherProject;
 ```
 
+***
 ### PhotoBackdrop
 這邊因為作者在 Github 提供的做法跟書本有差, 所以這裡僅以 Github 上的範例程式做說明。
 ```
