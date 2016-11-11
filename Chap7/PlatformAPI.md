@@ -457,6 +457,7 @@ export default PhotoBackdrop;
 
 **PhotoBackdrop/index.js**
 
+此 Demo Code 在 Github 上的版本已經與書中的差異滿多, 這邊就以 Github 的為主介紹。
 ```javascript
 import React, {
   Component,
