@@ -1,6 +1,10 @@
 # 使用 Device 相關的 API
 書中這章節將藉由原先的 WeatherProject 衍伸的 SmartWeather 來做範例, 示範以下存取裝置的 API 如何使用, 這邊會直接解說程式碼一邊介紹。
 
+* AsyncStorage
+* CameraRoll
+* navigator.geolocation
+
 **程式碼的結構如下**
 ```
 ./
@@ -83,6 +87,11 @@ export default styles;
 **LocationButton/index.js**
 
 在按鈕按壓後, 觸發取得當前位置的 API (使用方式可以參考下面補充, 從 Web API 延伸無須 import 即可使用), 並覆寫 Button 的 style (實際上兩者定義的 styles.js 內容是相同的)。
+
+Android 的位置權限需透過修改 AndroidManifest.xml 增加下面這行才能值行。
+```xml
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+```
 
 > [MDN reference](https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation/getCurrentPosition)
 
@@ -389,11 +398,13 @@ export default PhotoBackdrop;
 
 **PhotoBackdrop/local_image.js**
 
-主要是指定 this.state.photoSource 作為背景圖片, 而 photoSource 的來源是透過 CameraRoll 的 API 取得。
+主要是指定 this.state.photoSource 作為背景圖片, 而 photoSource 的來源是透過 CameraRoll 的 getPhotos 取得, 使用方式可以參考程式碼中筆者添加的註解 並對應 CameraRoll.js 原始碼。
 
 > 在使用 CameraRoll 的 API 前需要先 link CameraRoll 的 library, 可參考 [React Native link Library](https://facebook.github.io/react-native/docs/linking-libraries-ios.html) 教學, 按照上面指示就可以順利連結。
 > 
 > Library Path: SmartWeather/node_modules/react-native/Libraries/CameraRoll
+
+
 
 ```javascript
 import React, {
@@ -416,11 +427,14 @@ var PhotoBackdrop = React.createClass({
 
   componentDidMount() {
     CameraRoll.getPhotos(
+      // getPhotosParamChecker 用的參數, 會根據這個設定產生對應需求的回傳 data
       {first: 5},
+      // Success 的 callback, 將回傳的 data 取出第三章的 uri 指定給背景 
       (data) => {
         this.setState({
           photoSource: {uri: data.edges[3].node.image.uri}
         })},
+      // Error 的 callback
       (error) => {
         console.warn(error);
       });
@@ -437,6 +451,87 @@ var PhotoBackdrop = React.createClass({
       );
   }
 });
+
+export default PhotoBackdrop;
+```
+
+**PhotoBackdrop/index.js**
+
+此 Demo Code 在 Github 上的版本已經與書中的差異滿多, 這邊就以 Github 的為主介紹。
+```javascript
+import React, {
+  Component,
+} from 'react';
+
+import {
+  Image,
+  Platform
+} from 'react-native';
+
+import ImagePicker from 'react-native-image-picker';
+import styles from './styles.js';
+import Button from './../Button';
+
+class PhotoBackdrop extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      photoSource: require('./flowers.png')
+    };
+  }
+
+  _pickImage() {
+    // See https://github.com/marcshilling/react-native-image-picker#usage
+
+    var options = {
+      title: 'Select Image',
+      cancelButtonTitle: 'Cancel',
+      chooseFromLibraryButtonTitle: 'Choose From Library...',
+      takePhotoButtonTitle: 'Take Photo...',
+      cameraType: 'back', // 'front' or 'back'
+      mediaType: 'photo' // 'photo' or 'video'
+    };
+
+    ImagePicker.showImagePicker(
+      options,
+      (response) => {
+        console.log('response = ', response);
+
+        if (response.didCancel) {
+          console.log('Canceled ImagePicker');
+        }
+        else if (response.error) {
+          console.log('ImagePicker error: ', response.error);
+        }
+        else {
+          var source;
+          if (Platform.OS === 'ios') {
+            source = {uri: response.uri.replace('file://', ''), isStatic: true};
+          }
+          else {
+            source = {uri: response.uri, isStatic: true};
+          }
+          this.setState({ photoSource: source });
+        }
+      }
+    );
+  }
+
+  render() {
+    return (
+      <Image
+        style={styles.backdrop}
+        source={ this.state.photoSource }
+        resizeMode='cover'>
+        {this.props.children}
+        <Button
+          style={styles.button}
+          label="Load Image"
+          onPress={this._pickImage.bind(this)}/>
+      </Image>
+      );
+  }
+}
 
 export default PhotoBackdrop;
 ```
