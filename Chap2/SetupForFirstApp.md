@@ -42,7 +42,7 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 ```
 
-之後再從 Android Studio 的 SDK manager 介面中透過 launch android 原生的 sdk manager, 來安裝 API 23 版本所需的套件 (根據 [React Native 2.4](https://facebook.github.io/react-native/releases/0.24/docs/android-setup.html) 提供的資訊)
+之後再從 Android Studio 的 SDK manager 介面中透過 launch android 原生的 sdk manager, 來安裝 API 23 版本所需的套件 (根據 [React Native 2.4](https://facebook.github.io/react-native/releases/0.24/docs/android-setup.html) 提供的資訊, 以及筆者使用 react-native init 的 project 內建的 gradle 編譯資訊都是使用 API 23)
 
 ![](AndroidSDK.png)
 完成後安裝的動作就告一段落了。
