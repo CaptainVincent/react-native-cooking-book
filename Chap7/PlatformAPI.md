@@ -328,12 +328,17 @@ class WeatherProject extends Component {
 import textStyles from './styles/typography.js';
 const styles = StyleSheet.create({
   overlay: {
+    marginTop: 20,
+    height: 400,
+    width: 400,
+    flexDirection: 'column',
+    alignItems: 'center',
     paddingTop: 5,
+    paddingBottom: 5,
     backgroundColor: '#000000',
     opacity: 0.5,
   },
   row: {
-    width: 400,
     flex: 1,
     flexDirection: 'row',
     flexWrap: 'nowrap',

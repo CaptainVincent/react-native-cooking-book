@@ -29,6 +29,8 @@ npm install -g react-native-cli
 
 > HAXM v6.0.3 can only be installed via Android Studio -> SDK manager.
 
+**Install**
+
 ![](AndroidStudio.jpg)
 
 所以最後只好回過頭來, 透過直接安裝 Android Studio 的方式來解決這個環境的問題, AS 基本上一步一步按 繼續/同意 就可以安裝完畢。
@@ -40,12 +42,16 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 ```
 
-之後再從 Android Studio 的 SDK manager 介面中透過 launch android 原生的 sdk manager, 來安裝
-**Intel x86 Atom System Image (for Android 7.1.1-API 25)**, 完成後安裝的動作就告一段落了。
+之後再從 Android Studio 的 SDK manager 介面中透過 launch android 原生的 sdk manager, 來安裝 API 23 版本所需的套件 (根據 [React Native 2.4](https://facebook.github.io/react-native/releases/0.24/docs/android-setup.html) 提供的資訊)
 
-> 筆者也不知道為啥 AS 建議安裝的包沒有含到建立虛擬機器需要用到的 image。
+![](AndroidSDK.png)
+完成後安裝的動作就告一段落了。
 
 ![](SDKmanager.jpg)
+
+(launch 原生的 SDK Manager 方式)
+
+**Create Emulator**
 
 之後透過 Command Line (Shell) 執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢), 這邊簡單提供一個配置範例
 
@@ -59,13 +65,13 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 
 ** 透過 command line 執行 `android` 叫起 Android SDK Manager 的視窗介面, 除了預設項目要確保也安裝以下套件**
 
-* Android SDK Build-tools version 25 //2016-10-20 最新版本
-* Android 7.1.1 (API 25)
+* Android SDK Build-tools version 23.0.1
+* Android 6.0 (API 23)
 * Android Support Repository
 
 ** 重新啟動 Android SDK Manager 再安裝與模擬器相關的項目**
 
-* Intel x86 Atom System Image (for Android 7.1.1-API 25)
+* Intel x86 Atom System Image
 * Intel x86 Emulator Accelerator (HAXM installer)
 
 ** 透過執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢)**

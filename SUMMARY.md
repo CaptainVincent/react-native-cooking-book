@@ -20,3 +20,4 @@
    * [平台相關元件](Chap5/PlatformDependent.md)
 * [樣式設定](Chap6/Style.md)
 * [平台 API](Chap7/PlatformAPI.md)
+* [模組使用](Chap8/Module.md)
