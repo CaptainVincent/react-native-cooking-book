@@ -29,6 +29,8 @@ npm install -g react-native-cli
 
 > HAXM v6.0.3 can only be installed via Android Studio -> SDK manager.
 
+**Install**
+
 ![](AndroidStudio.jpg)
 
 所以最後只好回過頭來, 透過直接安裝 Android Studio 的方式來解決這個環境的問題, AS 基本上一步一步按 繼續/同意 就可以安裝完畢。
@@ -48,6 +50,8 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 ![](SDKmanager.jpg)
 
 (launch 原生的 SDK Manager 方式)
+
+**Create Emulator**
 
 之後透過 Command Line (Shell) 執行 `android avd` 創建一個模擬器 (Android Vritual Devices), 確保核選了 Use Host GPU (否則會執行得很慢), 這邊簡單提供一個配置範例
 
