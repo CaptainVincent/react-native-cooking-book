@@ -1,9 +1,9 @@
 # 使用 Device 相關的 API
 書中這章節將藉由原先的 WeatherProject 衍伸的 SmartWeather 來做範例, 示範以下存取裝置的 API 如何使用, 這邊會直接解說程式碼一邊介紹。
 
-* AsyncStorage
-* CameraRoll
-* navigator.geolocation
+* AsyncStorage //存取簡單資料的示範
+* CameraRoll //讀取 iOS 內建相簿圖片的示範
+* navigator.geolocation //取得座標位置的示範
 
 **程式碼的結構如下**
 ```
