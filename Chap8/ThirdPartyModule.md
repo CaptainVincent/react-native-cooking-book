@@ -98,7 +98,7 @@ AppRegistry.registerComponent('Depends', () => Depends);
  
 `npm install react-native-linear-gradient --save`
 
-套件官網提供的 link Library 方式
+**套件官網提供的 link Library 方式**
 
 in android/settings.gradle
 
