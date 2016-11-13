@@ -6,3 +6,6 @@
 
 > 可以透過以上指令的方式安裝大部分模組, 但是對於 DOM 操作相關的方法一般來說都會失敗, 因為這部分操作關係到執行環境。
 
+ ### Demo react-native-video
+
+`npm install react-native-video --save`
