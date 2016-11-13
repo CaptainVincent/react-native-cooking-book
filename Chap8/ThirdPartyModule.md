@@ -10,7 +10,7 @@
 
 `npm install react-native-video --save`
 
-[Link Library with iOS](https://facebook.github.io/react-native/docs/linking-libraries-ios.html) or 直接執行 `react-native link` 會自動幫你 iOS 與 Android 的 Library 都連結好, 之後就可以在程式碼中插入 Video tag。
+另外 [Link Library with iOS](https://facebook.github.io/react-native/docs/linking-libraries-ios.html) or 直接執行 `react-native link` 會自動幫你 iOS 與 Android 的 Library 都連結好, 之後就可以在程式碼中插入 Video tag。
 
 Source Code:
 ```javascript
@@ -97,3 +97,29 @@ AppRegistry.registerComponent('Depends', () => Depends);
  ### install react-native-linear-gradient (Demo for Android)
  
 `npm install react-native-linear-gradient --save`
+
+套件官網提供的 link Library 方式
+
+in android/settings.gradle
+
+...
+include ':react-native-linear-gradient'
+project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')
+in android/app/build.gradle add:
+
+dependencies {
+   ...
+   compile project(':react-native-linear-gradient')
+}
+and finally, in android/src/main/java/com/{YOUR_APP_NAME}/MainActivity.java for react-native < 0.29, or android/src/main/java/com/{YOUR_APP_NAME}/MainApplication.java for react-native >= 0.29 add:
+
+//...
+import com.BV.LinearGradient.LinearGradientPackage; // <--- This!
+//...
+@Override
+protected List<ReactPackage> getPackages() {
+ return Arrays.<ReactPackage>asList(
+   new MainReactPackage(),
+   new LinearGradientPackage() // <---- and This!
+ );
+}
