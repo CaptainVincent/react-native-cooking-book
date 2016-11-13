@@ -10,9 +10,7 @@
 
 `npm install react-native-video --save`
 
-[Link Library with iOS](https://facebook.github.io/react-native/docs/linking-libraries-ios.html) or 直接執行 `react-native link` 會自動幫你 iOS 與 Android 的 Library 都連結好
-
-之後就可以在程式碼中插入 Video tag
+[Link Library with iOS](https://facebook.github.io/react-native/docs/linking-libraries-ios.html) or 直接執行 `react-native link` 會自動幫你 iOS 與 Android 的 Library 都連結好, 之後就可以在程式碼中插入 Video tag。
 
 Source Code:
 ```javascript
