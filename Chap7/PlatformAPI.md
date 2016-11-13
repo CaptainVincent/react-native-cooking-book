@@ -100,7 +100,8 @@ export default styles;
 
 在按鈕按壓後, 觸發取得當前位置的 API (使用方式可以參考下面補充, 從 Web API 延伸無須 import 即可使用), 並覆寫 Button 的 style (實際上兩者定義的 styles.js 內容是相同的)。
 
->Android 的位置權限需透過修改 AndroidManifest.xml 增加下面這行才能值行。
+> Android 的位置權限需透過修改 AndroidManifest.xml 增加下面這行才能值行。
+
 ```xml
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 ```
@@ -424,7 +425,8 @@ export default PhotoBackdrop;
 > 
 > Library Path: SmartWeather/node_modules/react-native/Libraries/CameraRoll
 >
-> 另外還要加入為何使用手機相簿說明的 Description 到 info.plist (並rebuild project) 才能使用 
+> 另外還要加入為何使用手機相簿說明的 Description 到 info.plist (並rebuild project) 才能使用
+
 ```xml
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app requires access to the photo library.</string>
@@ -487,7 +489,7 @@ export default PhotoBackdrop;
 
 這邊使用到 [react-native-image-picker](https://github.com/marcshilling/react-native-image-picker) 這個模組, 可以參考 Github 上的模組安裝方式 (連結 library 的方式有 `react-native link` 自動的方式可以使用)。 
 
-> Android 的話可以參考網頁上開權限的方式
+> Android 的話可以參考網頁上開權限的方式, 修改 AndroidManifest.xml
 
 ```xml
 <!-- file: android/app/src/main/AndroidManifest.xml -->
