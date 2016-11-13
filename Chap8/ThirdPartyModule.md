@@ -95,3 +95,5 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('Depends', () => Depends);
 
 ```
+
+ ### install react-native-video (Demo for Android)
