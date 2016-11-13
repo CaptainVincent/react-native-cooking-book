@@ -416,7 +416,7 @@ class PhotoBackdrop extends Component {
 export default PhotoBackdrop;
 ```
 
-**PhotoBackdrop/local_image.js**
+**PhotoBackdrop/camera_roll_example.js**
 
 主要是指定 this.state.photoSource 作為背景圖片, 而 photoSource 的來源是透過 CameraRoll 的 getPhotos 取得, 使用方式可以參考程式碼中筆者添加的註解 並對應 CameraRoll.js 原始碼。(目前似乎仍只支援 iOS)
 
