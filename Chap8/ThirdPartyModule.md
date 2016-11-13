@@ -6,6 +6,88 @@
 
 > 可以透過以上指令的方式安裝大部分模組, 但是對於 DOM 操作相關的方法一般來說都會失敗, 因為這部分操作關係到執行環境。
 
- ### Demo react-native-video
+ ### install react-native-video
 
 `npm install react-native-video --save`
+
+
+```javascript
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
+
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
+
+import Video from 'react-native-video';
+
+export default class Depends extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Video source={require('./videoplayback.mp4')}
+               rate={1.0}                     // 0 is paused, 1 is normal.
+               volume={1.0}                   // 0 is muted, 1 is normal.
+               muted={false}                  // Mutes the audio entirely.
+               paused={false}                 // Pauses playback entirely.
+               playInBackground={false}       // Audio continues to play when app entering background.
+               playWhenInactive={false}       // [iOS] Video continues to play when control or notification center are shown.
+               progressUpdateInterval={250.0} // [iOS] Interval to fire onProgress (default to ~250ms)
+               onLoadStart={this.loadStart}   // Callback when video starts to load
+               onLoad={this.setDuration}      // Callback when video loads
+               onProgress={this.setTime}      // Callback every ~250ms with currentTime
+               onEnd={this.onEnd}             // Callback when playback finishes
+               onError={this.videoError}      // Callback when video cannot be loaded
+               style={styles.backgroundVideo} />
+
+        <Text style={styles.welcome}>
+          Welcome to React Native!
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit index.ios.js
+        </Text>
+        <Text style={styles.instructions}>
+          Press Cmd+R to reload,{'\n'}
+          Cmd+D or shake for dev menu
+        </Text>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+  backgroundVideo: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+  },
+});
+
+AppRegistry.registerComponent('Depends', () => Depends);
+
+```
