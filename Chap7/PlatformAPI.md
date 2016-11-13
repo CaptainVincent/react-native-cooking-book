@@ -1,9 +1,9 @@
 # 使用 Device 相關的 API
 書中這章節將藉由原先的 WeatherProject 衍伸的 SmartWeather 來做範例, 示範以下存取裝置的 API 如何使用, 這邊會直接解說程式碼一邊介紹。
 
-* AsyncStorage
-* CameraRoll
-* navigator.geolocation
+* AsyncStorage //存取簡單資料的示範
+* CameraRoll //讀取 iOS 內建相簿圖片的示範
+* navigator.geolocation //取得座標位置的示範
 
 **程式碼的結構如下**
 ```
@@ -466,7 +466,22 @@ export default PhotoBackdrop;
 
 此 Demo Code 在 Github 上的版本已經與書中的差異滿多, 這邊就以 Github 的為主介紹。
 
-這邊使用到 [react-native-image-picker](https://github.com/marcshilling/react-native-image-picker) 這個模組, 可以參考 Github 上的模組安裝方式, 原則上 iOS 跟 CameraRoll 雷同。
+這邊使用到 [react-native-image-picker](https://github.com/marcshilling/react-native-image-picker) 這個模組, 可以參考 Github 上的模組安裝方式, 原則上 iOS 跟 CameraRoll 雷同; Android 的話可以參考網頁上開權限的方式
+```xml
+<!-- file: android/app/src/main/AndroidManifest.xml -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myApp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- add following permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <!-- -->
+    ...
+```
 
 > react-native-image-picker 這邊範例有提供從 camera 照相的選項, 但實際上模擬器無法測試, 只能透過 Device 來驗證。
 
