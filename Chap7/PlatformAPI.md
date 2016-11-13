@@ -424,7 +424,7 @@ export default PhotoBackdrop;
 > 
 > Library Path: SmartWeather/node_modules/react-native/Libraries/CameraRoll
 >
-> 另外要加入為何使用手機相簿說明的 Description 才能使用
+> 另外還要加入為何使用手機相簿說明的 Description 到 info.plist (並rebuild project) 才能使用 
 ```xml
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app requires access to the photo library.</string>
