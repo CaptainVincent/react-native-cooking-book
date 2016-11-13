@@ -450,16 +450,16 @@ var PhotoBackdrop = React.createClass({
   },
 
   componentDidMount() {
-    CameraRoll.getPhotos(
-      // getPhotosParamChecker 用的參數, 會根據這個設定產生對應需求的回傳 data
-      {first: 5},
-      // Success 的 callback, 將回傳的 data 取出第三章的 uri 指定給背景 
-      (data) => {
+    // 參數物件是給 getPhotosParamChecker 用的參數, 會根據這個設定產生對應需求的回傳 data
+    CameraRoll.getPhotos({first: 5})
+      .then((data) => {
+        // 將回傳的 data 取出第三章的 uri 指定給背景 
         this.setState({
-          photoSource: {uri: data.edges[3].node.image.uri}
-        })},
-      // Error 的 callback
-      (error) => {
+          photoSource: {uri: data.edges[1].node.image.uri}
+        });
+        console.log(data.edges[0].node.image.uri);
+      }
+      , (error) => {
         console.warn(error);
       });
   },
