@@ -430,7 +430,6 @@ export default PhotoBackdrop;
 	<string>This app requires access to the photo library.</string>
 ```
 
-
 ```javascript
 import React, {
   Component,
