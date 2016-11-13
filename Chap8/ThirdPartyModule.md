@@ -96,4 +96,4 @@ AppRegistry.registerComponent('Depends', () => Depends);
 
 ```
 
- ### install react-native-video (Demo for Android)
+ ### install react-native-linear-gredient (Demo for Android)
