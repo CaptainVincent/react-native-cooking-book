@@ -8,3 +8,6 @@
 $ react-native log-ios
 $ react-native log-android
 ```
+
+### Device develop tool
+Command ⌘ + D
