@@ -21,3 +21,4 @@
 * [樣式設定](Chap6/Style.md)
 * [平台 API](Chap7/PlatformAPI.md)
 * [模組使用](Chap8/Module.md)
+  * [第三方模組引用](Chap8/ThirdPartyModule.md)
