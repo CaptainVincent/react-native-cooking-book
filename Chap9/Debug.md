@@ -19,3 +19,4 @@ Launch **Show Inspector**
 Select Instance 可以看到渲染的資訊
 ![](Inspect2.jpg)
 
+### Remote debug
