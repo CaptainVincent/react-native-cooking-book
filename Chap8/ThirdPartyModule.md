@@ -132,3 +132,62 @@ protected List<ReactPackage> getPackages() {
 ```
 
 or 直接執行 `react-native link` 會自動幫你 iOS 與 Android 的 Library 都連結好。 
+
+**index.android.js**
+```javascript
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
+
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
+
+import LinearGradient from 'react-native-linear-gradient';
+
+export default class Depends extends Component {
+  render() {
+    return (
+      <LinearGradient colors={['#FFFFFF', '#00A8A8']} style={styles.container}>
+        <Text style={styles.welcome}>
+          Welcome to React Native!
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit index.android.js
+        </Text>
+        <Text style={styles.instructions}>
+          Double tap R on your keyboard to reload,{'\n'}
+          Shake or press menu button for dev menu
+        </Text>
+      </LinearGradient>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+});
+
+AppRegistry.registerComponent('Depends', () => Depends);
+```
