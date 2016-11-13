@@ -1,5 +1,16 @@
 # 使用 Device 相關的 API
+
 書中這章節將藉由原先的 WeatherProject 衍伸的 SmartWeather 來做範例, 示範以下存取裝置的 API 如何使用, 這邊會直接解說程式碼一邊介紹。
+
+**如同之前 WeatherProject**
+> iOS 預設僅允許 https 的 request, 若是用 http 的網址則會回傳上面這個 error message, 或是要修改 info.plist (並rebuild project)
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+</dict>
+```
 
 * AsyncStorage //存取簡單資料的示範
 * CameraRoll //讀取 iOS 內建相簿圖片的示範
