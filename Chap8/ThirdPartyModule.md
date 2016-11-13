@@ -96,4 +96,6 @@ AppRegistry.registerComponent('Depends', () => Depends);
 
 ```
 
- ### install react-native-linear-gredient (Demo for Android)
+ ### install react-native-linear-gradient (Demo for Android)
+ 
+`npm install react-native-linear-gradient --save`
