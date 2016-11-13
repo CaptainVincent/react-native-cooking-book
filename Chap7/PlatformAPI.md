@@ -483,7 +483,7 @@ export default PhotoBackdrop;
 
 此 Demo Code 在 Github 上的版本已經與書中的差異滿多, 這邊就以 Github 的為主介紹。
 
-這邊使用到 [react-native-image-picker](https://github.com/marcshilling/react-native-image-picker) 這個模組, 可以參考 Github 上的模組安裝方式, 原則上 iOS 跟 CameraRoll 雷同; Android 的話可以參考網頁上開權限的方式
+這邊使用到 [react-native-image-picker](https://github.com/marcshilling/react-native-image-picker) 這個模組, 可以參考 Github 上的模組安裝方式 (連結 library 的方式有 `react-native link` 自動的方式可以使用); Android 的話可以參考網頁上開權限的方式
 ```xml
 <!-- file: android/app/src/main/AndroidManifest.xml -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
