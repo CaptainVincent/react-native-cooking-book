@@ -128,3 +128,5 @@ protected List<ReactPackage> getPackages() {
  );
 }
 ```
+
+or 直接執行 `react-native link` 會自動幫你 iOS 與 Android 的 Library 都連結好。 
