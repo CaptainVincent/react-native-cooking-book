@@ -602,3 +602,5 @@ class PhotoBackdrop extends Component {
 export default PhotoBackdrop;
 ```
 
+### Result
+![](SmartWeather.jpg)
