@@ -11,7 +11,7 @@
 
 `npm install react-native-video --save`
 
-[Link Library](https://facebook.github.io/react-native/docs/linking-libraries-ios.html)
+[Link Library in Xcode](https://facebook.github.io/react-native/docs/linking-libraries-ios.html)
 ```javascript
 /**
  * Sample React Native App
