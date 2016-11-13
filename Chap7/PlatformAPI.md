@@ -490,7 +490,7 @@ export default PhotoBackdrop;
 
 這邊使用到 [react-native-image-picker](https://github.com/marcshilling/react-native-image-picker) 這個模組, 可以參考 Github 上的模組安裝方式 (連結 library 有提供指令 `react-native link` 自動連結的方式可以使用)。 
 
-> Android 的話可以參考網頁上開權限的方式, 修改 AndroidManifest.xml
+> Android 的話另外參考網頁上開權限的方式, 修改 AndroidManifest.xml
 
 ```xml
 <!-- file: android/app/src/main/AndroidManifest.xml -->
