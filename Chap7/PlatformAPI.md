@@ -489,7 +489,7 @@ export default PhotoBackdrop;
 
 > Android 的話可以參考網頁上開權限的方式
 
-```
+```xml
 <!-- file: android/app/src/main/AndroidManifest.xml -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.myApp">
