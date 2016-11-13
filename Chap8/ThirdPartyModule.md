@@ -114,8 +114,9 @@ dependencies {
    compile project(':react-native-linear-gradient')
 }
 ```
-and finally, in android/src/main/java/com/{YOUR_APP_NAME}/MainActivity.java for react-native < 0.29, or android/src/main/java/com/{YOUR_APP_NAME}/MainApplication.java for react-native >= 0.29 add:
 
+3. and finally, in android/src/main/java/com/{YOUR_APP_NAME}/MainActivity.java for react-native < 0.29, or android/src/main/java/com/{YOUR_APP_NAME}/MainApplication.java for react-native >= 0.29 add:
+```javascript
 //...
 import com.BV.LinearGradient.LinearGradientPackage; // <--- This!
 //...
@@ -126,3 +127,4 @@ protected List<ReactPackage> getPackages() {
    new LinearGradientPackage() // <---- and This!
  );
 }
+```
