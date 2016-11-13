@@ -8,9 +8,10 @@
 
  ### install react-native-video
 
+
 `npm install react-native-video --save`
 
-
+in
 ```javascript
 /**
  * Sample React Native App
