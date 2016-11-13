@@ -1,3 +1,5 @@
 # 引用第三方模組
 
 使用過 npm 管理套件的人可能就會對 package.json 有點概念, 因為不管是開發網頁應用 或是 本書的主題用 React Native 開發的 App, 都時常會引用到不同版本的 package (且因為這些套件之間的相依關係, 並非每個版本都彼此兼容), 所以為了解決這個印題, 可以建立 package.json 將開發該應用所使用到的這些套件版本描述在內。
+
+使用方式則是透過指令 `npm install <module name> --save` (save 會將該套件記錄到 package.json)
