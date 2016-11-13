@@ -42,6 +42,8 @@
 **Button/index.js**
 
 宣告 Button component, 透過屬性的設定來決定 onPress 的行為 以及 渲染在元件上的文字。
+
+Source Code:
 ```javascript
 import React, {
   Component,
@@ -80,6 +82,8 @@ export default Button;
 **Button/styles.js**
 
 設定按鈕的外觀。
+
+Source Code:
 ```javascript
 import { StyleSheet } from 'react-native';
 
@@ -116,6 +120,7 @@ export default styles;
 
 > [追蹤位置的方式](https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation/watchPosition)
 
+Source Code:
 ```javascript
 import React, {
   Component,
@@ -159,6 +164,8 @@ export default LocationButton;
 **Forecast/index.js**
 
 跟 WeatherProject 版本的相差不多, 唯一的不同就是把 style 抽出去。
+
+Source Code:
 ```javascript
 import React, {
   Component,
@@ -202,6 +209,8 @@ export default Forecast;
 ***
 ### weather_project.js
 接下來的程式碼比較複雜, 將說明直接註解在程式碼內文。
+
+Source Code:
 ```javascript
 import React, {Component} from 'react';
 import {
@@ -391,6 +400,8 @@ export default WeatherProject;
 **PhotoBackdrop/local_image.js**
 
 指定 local 的圖片 PhotoBackdrop/flowers.png 為背景。
+
+Source Code:
 ```javascript
 import React, {
   Component,
@@ -433,6 +444,7 @@ export default PhotoBackdrop;
 	<string>This app requires access to the photo library.</string>
 ```
 
+Source Code:
 ```javascript
 import React, {
   Component,
@@ -508,6 +520,7 @@ export default PhotoBackdrop;
     ...
 ```
 
+Source Code:
 ```javascript
 import React, {
   Component,
