@@ -100,11 +100,11 @@ export default styles;
 
 在按鈕按壓後, 觸發取得當前位置的 API (使用方式可以參考下面補充, 從 Web API 延伸無須 import 即可使用), 並覆寫 Button 的 style (實際上兩者定義的 styles.js 內容是相同的)。
 
-Android 的位置權限需透過修改 AndroidManifest.xml 增加下面這行才能值行。
+>Android 的位置權限需透過修改 AndroidManifest.xml 增加下面這行才能值行。
 ```xml
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 ```
-
+***
 > [MDN reference](https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation/getCurrentPosition)
 
 > navigator.geolocation.getCurrentPosition(success[, error[, options]])
