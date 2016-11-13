@@ -100,17 +100,20 @@ AppRegistry.registerComponent('Depends', () => Depends);
 
 **套件官網提供的 link Library 方式**
 
-in android/settings.gradle
-
+1. in android/settings.gradle
+```
 ...
 include ':react-native-linear-gradient'
 project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')
-in android/app/build.gradle add:
+```
 
+2. in android/app/build.gradle add:
+```
 dependencies {
    ...
    compile project(':react-native-linear-gradient')
 }
+```
 and finally, in android/src/main/java/com/{YOUR_APP_NAME}/MainActivity.java for react-native < 0.29, or android/src/main/java/com/{YOUR_APP_NAME}/MainApplication.java for react-native >= 0.29 add:
 
 //...
