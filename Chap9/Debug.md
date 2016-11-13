@@ -10,4 +10,10 @@ $ react-native log-android
 ```
 
 ### Device develop tool
-Command ⌘ + D
+* iOS use **Command ⌘ + D**
+* Android use **Command ⌘ + M** 
+
+Launch **Show Inspector**
+![](Inspect1.jpg)
+
+Select Instance 可以看到渲染的資訊
