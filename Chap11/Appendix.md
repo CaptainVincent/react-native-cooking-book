@@ -42,3 +42,15 @@ module.exports = MyComponent;
 var OtherComponent = require('./other_component');
 ```
 **ES6**
+
+Example: other_component
+```javascript
+var MyComponent = React.createClass({
+  :
+});
+export default MyComponent;
+```
+
+```javascript
+var OtherComponent = require('./other_component');
+```
