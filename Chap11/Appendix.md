@@ -96,3 +96,8 @@ var callbackFunc = (val) => {
 
 ***
 ### 字串插值
+**ES5**
+```javascript
+var API_KEY = 'abcdefg';
+var url = 'http://someapi.com/request&key=' + API_KEY;
+```
