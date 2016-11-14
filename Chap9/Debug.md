@@ -34,7 +34,7 @@ Select Instance 可以看到渲染的資訊
 一般常見語法錯誤都會造成紅色畫面, 畫面上會呈現的 Debug Message, 通常都是滿有用的資訊。
 
 ### Flow
-Flow 是靜態型別檢驗的工具
+Flow 是靜態型別檢驗的工具, 可以用來提早檢驗問題的發生。
 
 .flowconfig 內添加 `.*/node_modules/.*` 可以避開檢查 node_module 的程式 (第三方)
 
