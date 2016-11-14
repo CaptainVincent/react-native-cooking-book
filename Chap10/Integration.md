@@ -7,6 +7,7 @@ Zebreto
 |-- icon.png
 |-- index.android.js
 |-- index.ios.js
+|-- node_module
 |-- package.json
 |-- screenshots
 |   |-- create.png
