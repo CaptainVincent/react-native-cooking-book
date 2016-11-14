@@ -40,3 +40,4 @@ module.exports = MyComponent;
 ```javascript
 var OtherComponent = require('./other_component');
 ```
+**ES6**
