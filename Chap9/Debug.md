@@ -33,4 +33,23 @@ Select Instance 可以看到渲染的資訊
 ### Red Screen of Death
 一般常見語法錯誤都會造成紅色畫面, 畫面上會呈現的 Debug Message, 通常都是滿有用的資訊。
 
-### 常見問題
+### Flow
+Flow 是靜態型別檢驗的工具, 可以用來提早檢驗問題的發生。
+
+* 可以在 .flowconfig 內先添加 `.*/node_modules/.*`, 避開檢查 node_module 的程式 (第三方模組安裝路徑)
+
+* 然後執行 `flow check --ignore-version` (--ignore-version 是因為檢查工具版本的資訊 跟 設定檔內有時會不 match, 繞過這個問題所下的參數)
+
+> 因為忽略了第三方模組安裝的路徑, 所以檢查時會報出一些必要 module 沒找到的問題。
+
+### Jest
+基於 [Jasmine](https://github.com/jasmine/jasmine) 建構的單元測試框架, 執行 `npm test` 即可。
+
+> 測試程式放置 __test__ 路徑下。
+
+
+
+### 一些常見問題
+* No visible interface for RCTRootView, 通常表示 React Native 中的 Object-C 類別因為某些因素導致於 Xcode 中無法看到 => 檢查套件, 重新執行 npm install
+* React Native 的套件管理員會在執行程式時自動啟動 (新開一個 Shell), 若是沒有關閉即切換專案, 會使之停留於前一個專案目錄下, 可以透過 `npm start` 手動決定何時啟用。
+* 部署至 iOS 上出現問題, 首先可以至 [iTunes Connect]() 檢查開發者帳號的權限, 接受尚未同意的協議。
