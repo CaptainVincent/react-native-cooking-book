@@ -36,7 +36,7 @@ Select Instance 可以看到渲染的資訊
 ### Flow
 Flow 是靜態型別檢驗的工具, 可以用來提早檢驗問題的發生。
 
-可以在 .flowconfig 內添加 `.*/node_modules/.*`, 避開檢查 node_module 的程式 (第三方)
+可以在 .flowconfig 內添加 `.*/node_modules/.*`, 避開檢查 node_module 的程式 (第三方模組安裝路徑)
 
 然後執行 `flow check --ignore-version` (--ignore-version 是因為檢查工具版本的資訊 跟 設定檔內有時會不 match)
 
