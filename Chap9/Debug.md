@@ -20,3 +20,4 @@ Select Instance 可以看到渲染的資訊
 ![](Inspect2.jpg)
 
 ### Remote debug
+根據官方的資料, 以前是能透過 Google
