@@ -85,3 +85,11 @@ var callbackFunc = function(val){
 }.bind(this);
 ```
 
+**ES6**
+
+箭頭 (fat arrow) 函式是自動綁定的
+```javascript
+var callbackFunc = (val) => {
+  console.log('do something');
+};
+```
