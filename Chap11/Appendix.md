@@ -72,3 +72,16 @@ render(){
   return <Text>Hi</Text>;
 }
 ```
+
+***
+### 箭頭函式
+
+**ES5** 
+
+符合 ES5 的 javascript 中通常需要 bind 我們的函式以確保它的內容 (ex. this)
+```javascript
+var callbackFunc = function(val){
+  console.log('do something');
+}.bind(this);
+```
+
