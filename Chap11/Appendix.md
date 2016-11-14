@@ -52,5 +52,5 @@ export default MyComponent;
 ```
 
 ```javascript
-var OtherComponent = require('./other_component');
+import OtherComponent from './other_component';
 ```
