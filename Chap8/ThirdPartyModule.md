@@ -6,6 +6,7 @@
 
 > 可以透過以上指令的方式安裝大部分模組, 但是對於 DOM 操作相關的方法一般來說都會失敗, 因為這部分操作關係到執行環境。
 
+***
  ### install react-native-video (Demo for iOS)
 
 `npm install react-native-video --save`
@@ -96,6 +97,7 @@ AppRegistry.registerComponent('Depends', () => Depends);
 
 ```
 
+***
  ### install react-native-linear-gradient (Demo for Android)
  
 `npm install react-native-linear-gradient --save`
