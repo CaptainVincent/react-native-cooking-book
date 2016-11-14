@@ -22,3 +22,5 @@ ES6
 ```
 var {View} = require('react-native')
 ```
+
+### 匯入模組
