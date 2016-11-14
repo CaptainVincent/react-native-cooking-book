@@ -23,3 +23,6 @@ Select Instance 可以看到渲染的資訊
 根據 Facebook 官方的資料, 以前是能透過 Google 的 Develop Tool 開啟 plugin **React Develop Tool**, 不過目前功能已經被閹掉了 (默哀)。
 
 >It is currently **not possible** to use the "React" tab in the Chrome Developer Tools to inspect app widgets. You can use Nuclide's "React Native Inspector" as a workaround.
+
+至於用 Safari 連結 iphone 的部分, 使用模擬器測試看不到 UI 元件的 view, 僅 console log 正常, 所以這部分就先暫擱, 稍後當功課再補完。
+
