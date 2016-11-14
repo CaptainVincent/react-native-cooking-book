@@ -42,6 +42,8 @@ Flow 是靜態型別檢驗的工具, 可以用來提早檢驗問題的發生。
 
 > 因為忽略了第三方模組安裝的路徑, 所以檢查時會報出一些必要 module 沒找到的問題。
 
+### Jest
+
 
 ### 一些常見問題
 * No visible interface for RCTRootView, 通常表示 React Native 中的 Object-C 類別因為某些因素導致於 Xcode 中無法看到 => 檢查套件, 重新執行 npm install
