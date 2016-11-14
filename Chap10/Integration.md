@@ -48,4 +48,6 @@ Zebreto
 ![](ZebretoNewCard.png)
 
 **Review**
+
+選出正確的配對關係 或是 結束 Review。
 ![](ZebretoReview.png)
