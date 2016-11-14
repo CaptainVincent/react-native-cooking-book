@@ -20,5 +20,5 @@ var View = React.React;
 ```
 ES6
 ```
-var {a, b} = {a:1, b:2};
+var {View} = require('react-native')
 ```
