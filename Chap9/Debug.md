@@ -20,6 +20,6 @@ Select Instance 可以看到渲染的資訊
 ![](Inspect2.jpg)
 
 ### Remote debug
-根據 Facebook 官方的資料, 以前是能透過 Google 的 Develop Tool 開啟 plugin **React Develop Tool**, 不過目前功能已經被閹掉了 (默哀)
+根據 Facebook 官方的資料, 以前是能透過 Google 的 Develop Tool 開啟 plugin **React Develop Tool**, 不過目前功能已經被閹掉了 (默哀)。
 
 >It is currently **not possible** to use the "React" tab in the Chrome Developer Tools to inspect app widgets. You can use Nuclide's "React Native Inspector" as a workaround.
