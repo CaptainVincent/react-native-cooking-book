@@ -38,10 +38,16 @@ Zebreto
 介紹 UI 元件分部結構
 
 **Decks**
+
+提供新增牌組, 或是針對已存在的牌組, 切到 NewCard 的場景。
 ![](ZebretoDecks.png)
 
 **NewCard**
+
+新增牌組(建立成對的關係[front, back])、結束回到起始頁面 或是 開始進行 Review。
 ![](ZebretoNewCard.png)
 
 **Review**
+
+選出正確的配對關係 或是 結束 Review。
 ![](ZebretoReview.png)
