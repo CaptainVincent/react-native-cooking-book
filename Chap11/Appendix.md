@@ -101,3 +101,9 @@ var callbackFunc = (val) => {
 var API_KEY = 'abcdefg';
 var url = 'http://someapi.com/request&key=' + API_KEY;
 ```
+
+**ES6**
+```javascript
+var API_KEY = 'abcdefg';
+var url = `http://someapi.com/request&key=${API_KEY}`;
+```
