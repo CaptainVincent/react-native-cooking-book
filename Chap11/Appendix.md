@@ -12,7 +12,8 @@ ES6
 var {a, b} = {a:1, b:2};
 ```
 
-常見的 require 語法使用 Destructing
+**常見的 require 語法使用 Destructing**
+
 ES5
 ```javascript
 var React = require('react-native');
@@ -24,3 +25,18 @@ var {View} = require('react-native')
 ```
 
 ### 匯入模組
+
+
+**CommonJS 的模組語**
+
+Example: other_component
+```javascript
+var MyComponent = React.createClass({
+  :
+});
+module.exports = MyComponent;
+```
+
+```javascript
+var OtherComponent = require('./other_component');
+```
