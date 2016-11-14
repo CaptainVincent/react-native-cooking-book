@@ -1,6 +1,6 @@
 # 大型專案示範
 
-以 [bonniee/learning-react-native/Zebreto](https://github.com/bonniee/learning-react-native/tree/master/Zebreto) 為例
+以 [bonniee/learning-react-native/Zebreto](https://github.com/bonniee/learning-react-native/tree/master/Zebreto) 為例, 這是一個 **S**paced **R**epetition **S**ystem 的系統 - 提高記憶學習的策略, 藉由一系列呈現 pair 關係的牌卡, 亂數產生許多找出 pair 關係的選擇題出題,  再藉由正確與錯誤的機率降低或提高牌卡的出現機率回饋系統, 達成訓練的目標。
 
 ```
 Zebreto
@@ -39,3 +39,9 @@ Zebreto
 
 **Decks**
 ![](ZebretoDecks.png)
+
+**NewCard**
+![](ZebretoNewCard.png)
+
+**Review**
+![](ZebretoReview.png)
