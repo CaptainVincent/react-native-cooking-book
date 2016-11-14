@@ -34,7 +34,14 @@ Select Instance 可以看到渲染的資訊
 一般常見語法錯誤都會造成紅色畫面, 畫面上會呈現的 Debug Message, 通常都是滿有用的資訊。
 
 ### Flow
-`flow check --ignore-version` (version 是因為檢查工具版本的資訊 跟 設定檔內有時會不 match)
+Flow 是靜態型別檢驗的工具
+
+.flowconfig 內添加 `.*/node_modules/.*` 可以避開檢查 node_module 的程式 (第三方)
+
+然後執行 `flow check --ignore-version` (--ignore-version 是因為檢查工具版本的資訊 跟 設定檔內有時會不 match)
+
+因為忽略了第三方模組安裝的路徑, 所以檢查時會報出一些必要 module 沒找到的問題。
+
 
 ### 一些常見問題
 * No visible interface for RCTRootView, 通常表示 React Native 中的 Object-C 類別因為某些因素導致於 Xcode 中無法看到 => 檢查套件, 重新執行 npm install
