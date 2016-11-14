@@ -27,3 +27,5 @@ Select Instance 可以看到渲染的資訊
 至於用 Safari 連結 iphone 的部分, 使用模擬器測試看不到 UI 元件的 view, 僅 console log 正常, 所以這部分就先暫擱, 稍後當功課再補完。
 
 [Weinre Reference](http://people.apache.org/~pmuellr/weinre/docs/latest/)
+
+### Red Screen of Death
