@@ -1,4 +1,5 @@
 # 大型專案示範
+以 bonniee/learning-react-native/Zebreto 為例
 ```
 Zebreto
 ./
