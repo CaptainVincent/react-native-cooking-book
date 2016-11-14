@@ -14,9 +14,11 @@ $ react-native log-android
 * Android use **Command ⌘ + M** 
 
 Launch **Show Inspector**
+
 ![](Inspect1.jpg)
 
 Select Instance 可以看到渲染的資訊
+
 ![](Inspect2.jpg)
 
 ### Remote debug
