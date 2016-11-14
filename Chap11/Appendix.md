@@ -1,4 +1,4 @@
-# ES6 語法
+# ES6語法
 
 ### Destructing
 **ES5**
@@ -103,6 +103,8 @@ var url = 'http://someapi.com/request&key=' + API_KEY;
 ```
 
 **ES6**
+
+可使用 ${} 插入變數值
 ```javascript
 var API_KEY = 'abcdefg';
 var url = `http://someapi.com/request&key=${API_KEY}`;
