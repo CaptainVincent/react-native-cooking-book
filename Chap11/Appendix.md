@@ -67,3 +67,8 @@ render: function(){
 ```
 
 **ES6**
+```javascript
+render(){
+  return <Text>Hi</Text>;
+}
+```
