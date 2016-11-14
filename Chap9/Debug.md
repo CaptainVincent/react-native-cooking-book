@@ -33,7 +33,7 @@ Select Instance 可以看到渲染的資訊
 ### Red Screen of Death
 一般常見語法錯誤都會造成紅色畫面, 畫面上會呈現的 Debug Message, 通常都是滿有用的資訊。
 
-
+### Flow
 
 ### 一些常見問題
 * No visible interface for RCTRootView, 通常表示 React Native 中的 Object-C 類別因為某些因素導致於 Xcode 中無法看到 => 檢查套件, 重新執行 npm install
