@@ -60,5 +60,10 @@ import OtherComponent from './other_component';
 ***
 ### 函式撰寫
 **ES5**
+```javascript
+render: function(){
+  return <Text>Hi</Text>;
+}
+```
 
 **ES6**
