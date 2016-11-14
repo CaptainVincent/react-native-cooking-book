@@ -31,3 +31,4 @@ Select Instance 可以看到渲染的資訊
 [Weinre Reference](http://people.apache.org/~pmuellr/weinre/docs/latest/)
 
 ### Red Screen of Death
+一般常見語法錯誤都會造成紅色畫面, 畫面上會呈現的 Debug Message, 通常都是滿有用的資訊。
