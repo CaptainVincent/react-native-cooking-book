@@ -43,7 +43,9 @@ Flow 是靜態型別檢驗的工具, 可以用來提早檢驗問題的發生。
 > 因為忽略了第三方模組安裝的路徑, 所以檢查時會報出一些必要 module 沒找到的問題。
 
 ### Jest
-基於 [Jasmine](https://github.com/jasmine/jasmine) 建構的單元測試框架
+基於 [Jasmine](https://github.com/jasmine/jasmine) 建構的單元測試框架, 執行 `npm test` 即可。
+
+> 測試程式放置 __test__ 路徑下。
 
 
 
