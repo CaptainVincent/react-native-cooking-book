@@ -104,7 +104,7 @@ var url = 'http://someapi.com/request&key=' + API_KEY;
 
 **ES6**
 
-可使用 ${} 插入變數值
+以反引號 (backtick) 包圍的字串, 可使用 ${} 插入變數值
 ```javascript
 var API_KEY = 'abcdefg';
 var url = `http://someapi.com/request&key=${API_KEY}`;
