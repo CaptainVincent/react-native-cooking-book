@@ -22,7 +22,7 @@ Zebreto
 * dueDate //何時過期
 * id //識別用 id
 
-### src/Deck.js
+### src/data/Deck.js
 ```javascript
 import md5 from 'md5';
 
