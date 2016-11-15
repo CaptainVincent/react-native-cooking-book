@@ -67,7 +67,7 @@ class Card {
     this.back = back;
     this.deckID = deckID;
     this.strength = 0;
-    this.dueDate = moment();
+    this.dueDate = moment(); //初始為立即過期, 如此新加入的卡片才會馬上成為題目
     this.id = md5(front + back + deckID);
   }
 
