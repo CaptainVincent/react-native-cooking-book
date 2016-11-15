@@ -31,7 +31,7 @@ class Deck {
     this.name = name;
     this.totalCards = 0;
     this.dueCards = 0;
-    this.id = md5(name);
+    this.id = md5(name); //使用 MD5 雜湊建表
   }
 
   setFromObject(ob) {
