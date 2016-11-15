@@ -6,11 +6,13 @@ Flux 是由 Facebook 提出的一種 Design Pattern, 它不具有一個標準制
 
 ### MVC 與遇到的問題
 **簡單的 MVC 架構**
+
 ![](mvc-simple.png)
 
 **複雜 MVC 可能出現的架構**
 
 可以看到整個系統無限制的情況下, 會導致架構的發散與元件間互動關係的穿插複雜化, 最後導致於難以維護。
+
 ![](mvc-complex.png)
 
 ### Flux
