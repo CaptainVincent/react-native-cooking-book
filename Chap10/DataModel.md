@@ -8,9 +8,16 @@ Zebreto
 
 基本的資料模型有：牌組、卡牌
 
-Card
+**Deck**
+* name
+* id
+* totalCards
+* dueCards
+
+**Card**
 * front
 * back
 * deckID
 * strength
 * dueDate
+* id
