@@ -5,7 +5,7 @@ Zebreto 是透過將 **資料模型** 的物件轉成 JSON 序列化後 (透過 
 Zebreto
 ./
 `-- src
-    |-- data //資料模型
+    |-- stores //Reflux 儲存體
 ```
  
 ### src/Store/Deck.js
