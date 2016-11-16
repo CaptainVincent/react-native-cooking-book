@@ -9,7 +9,7 @@ Zebreto
 ```
  
 ### src/Store/CardsStore.js
-資料存放的重點在 _loadCards、_writeCards
+資料存放的重點在 _loadCards、_writeCards (DeckMetaStore.js 這邊省略介紹)
 
 ```javascript
 import Card from './../data/Card';
