@@ -42,7 +42,7 @@ import { NativeModules } from 'react-native';
 export default NativeModules.HelloWorld;
 ```
 
-之後就可以
+之後就可以直接使用
 ```javascript
 var HelloWorld = require('./HelloWorld');
 ```
