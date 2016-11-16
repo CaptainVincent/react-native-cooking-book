@@ -28,4 +28,6 @@
 * [大型專案示範](Chap10/Integration.md)
    * [資料模型](Chap10/DataModel.md) 
    * [資料流架構 Flux](Chap10/DataFlow.md)
+   * [資料存放](Chap10/StoreDate.md)
+   * [Navigator](Chap10/Navigator.md)
 * [Appendix: ES6](Chap11/Appendix.md)
