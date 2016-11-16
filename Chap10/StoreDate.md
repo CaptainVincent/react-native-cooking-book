@@ -1,5 +1,5 @@
 # 資料存放
-Zebreto 是透過簡單的將 **資料模型** 轉成 JSON 序列化後 (**stringify**, **parse**), 取出時, 將資料以 AsyncStorage 存放。
+Zebreto 是透過簡單的將 **資料模型** 的資料部分, 轉成 JSON 序列化後 (**stringify**, **parse**), 取出時, 將資料以 AsyncStorage 存放。
 
 
 ```
