@@ -28,7 +28,9 @@ Zebreto
   }
 ```
 
-根據當前 route.name 來決定渲染的 View 為何, 並透過 props 來傳遞 Callback。
+根據當前 route.name 來決定要渲染的 View 為何, 並透過 props 來傳遞 callback 給該元件 以及 執行 navigator 合適的更新動作。
+> 筆者認為這邊的範例寫得不好, 根據 Flux 的資料流架構, 不應該把 callback function 傳遞給下層, 應該要加資料更新給 store 即可。
+
 ```javascript
   _renderScene(route) {
     switch (route.name) {
