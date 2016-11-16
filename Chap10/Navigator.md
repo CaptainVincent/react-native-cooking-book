@@ -10,9 +10,9 @@ Zebreto
 ### src/components/Zebreto.js
 從 Root Component 可以看到將畫面切成上方標題, 與下方的 Navigator 元件, 第一個部分可以看出
 
-*
-*
-* _renderScene
+* 1
+* 1
+* _renderScene, 提供 Navigator callback 來執行渲染的函式。
 
 ```javascript
   render() {
