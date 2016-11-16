@@ -8,6 +8,8 @@ Zebreto
 ```
 
 ### src/components/Zebreto.js
+
+從 Root Component 可以看到將畫面切成上方標題, 與下方的 Navigator 元件。
 ```javascript
   render() {
     return (
