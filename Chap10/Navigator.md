@@ -28,6 +28,7 @@ Zebreto
   }
 ```
 
+根據當前 route.name 來決定渲染的 View 為何, 並透過 props 來傳遞 Callback
 ```javascript
   _renderScene(route) {
     switch (route.name) {
