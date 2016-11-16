@@ -43,8 +43,9 @@ module.exports = {fonts, scalingFactors};
 ```
 
 ### src/components/NormalText.js
-以 NormalText.js 為例 
-```
+以 NormalText.js 為例, 示範如何調整字體大小。
+
+```javascript
 import React, { Component } from 'react';
 import {
   StyleSheet,
@@ -54,7 +55,7 @@ import {
 
 import {fonts, scalingFactors} from './../styles/fonts';
 import Dimensions from 'Dimensions';
-let {width} = Dimensions.get('window');
+let {width} = Dimensions.get('window'); //透過此方式取得視窗大小
 
 class NormalText extends Component {
   static displayName = 'NormalText';
