@@ -46,3 +46,5 @@ export default NativeModules.HelloWorld;
 ```javascript
 var HelloWorld = require('./HelloWorld');
 ```
+
+### [更複雜的例子](http://reactnative.cn/docs/0.36/native-component-ios.html)
