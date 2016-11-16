@@ -27,3 +27,6 @@ Flux 的架構基本上可以視為一種抽象層的概念, 希望仍保有簡�
 **複雜 Flux 架構**
 ![](flux-complex.png)
 
+### Reflux
+Reflux 的設計則是省略了 Dispatcher 的角色, Store 直接 listern Action。
+
