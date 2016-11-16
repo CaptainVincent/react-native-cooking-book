@@ -19,3 +19,6 @@ Flux 是由 Facebook 提出的一種 Design Pattern, 它不具有一個標準制
 Flux 的架構基本上可以視為一種抽象層的概念, 希望仍保有簡單 MVC 的元件單向互動模式。
 
 ![](mvc-Classic.png)
+
+**Flux 架構**
+![](flux-simple.png)
