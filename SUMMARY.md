@@ -30,4 +30,6 @@
    * [資料流架構 Flux](Chap10/DataFlow.md)
    * [資料存放](Chap10/StoreDate.md)
    * [Navigator](Chap10/Navigator.md)
+   * [字型大小的設計](Chap10/FontSize.md)
+* [最後](Chap12/AfterAll.md)
 * [Appendix: ES6](Chap11/Appendix.md)
