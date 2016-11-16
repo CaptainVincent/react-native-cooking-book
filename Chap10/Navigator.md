@@ -52,7 +52,7 @@ Zebreto
   },
 ```
 
-這邊定義的 function 是用來處理 navigator 的交替動作。
+這邊定義的 function 主要是用來處理 navigator 的交替動作。
 ```javascript
   review(deckID) {
     DeckActions.reviewDeck(deckID);
