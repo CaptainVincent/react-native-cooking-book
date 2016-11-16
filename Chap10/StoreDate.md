@@ -7,9 +7,10 @@ Zebreto
 `-- src
     |-- stores //Reflux 儲存體
 ```
- 
+(DeckMetaStore.js 這邊省略介紹, 以 CardsStore.js 為例)
+
 ### src/Store/CardsStore.js
-資料存放的重點在 _loadCards、_writeCards (DeckMetaStore.js 這邊省略介紹)
+資料存放的重點在 _loadCards、_writeCards 兩個函式。
 
 ```javascript
 import Card from './../data/Card';
