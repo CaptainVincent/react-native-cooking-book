@@ -1,5 +1,7 @@
-# 字型大小的設計
-針對不同螢幕大小, flexbox 通常已經可以解決排版的問題, 再來要討論字體大小的設計, 如何適應這些不同尺寸的螢幕。
+#
+
+針對不同螢幕大小, flexbox 通常已經可以解決排版的問題, 再來要討論字體大小的設計, 如何適應這些 字型大小的設計
+不同尺寸的螢幕。
 
 ```
 Zebreto
@@ -42,7 +44,7 @@ module.exports = {fonts, scalingFactors};
 ```
 
 ### src/components/NormalText.js
-
+以 NormalText.js 為例 
 ```
 import React, { Component } from 'react';
 import {
