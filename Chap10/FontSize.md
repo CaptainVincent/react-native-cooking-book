@@ -9,3 +9,4 @@ Zebreto
 ```
 
 ### src/styles/fonts.js
+```
