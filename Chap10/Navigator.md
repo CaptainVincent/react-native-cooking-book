@@ -1,4 +1,13 @@
 # Navigator
+```
+Zebreto
+./
+`-- src
+    |-- components //所有的元件
+        |-- Zebreto.js
+```
+
+### src/component/Zebreto.js
 ```javascript
 import React, { Component } from 'react';
 import {
