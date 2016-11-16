@@ -73,7 +73,7 @@ NormalText.propTypes = {
   style: Text.propTypes.style
 };
 
-const scaled = StyleSheet.create({ //
+const scaled = StyleSheet.create({ //透過寬度除以比例關係得到想要的字體大小
   normal: {
     fontSize: width / scalingFactors.normal
   }
