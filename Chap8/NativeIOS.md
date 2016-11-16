@@ -35,3 +35,14 @@ RCT_EXPORT_METHOD(greeting:(NSString *)name)
 ```javascript
 var HelloWorld = require('react-native').NativeModules.HelloWorld;
 ```
+
+或是包裝一層 HelloWorld.js
+```javascript
+import { NativeModules } from 'react-native';
+export default NativeModules.HelloWorld;
+```
+
+之後就可以
+```javascript
+var HelloWorld = require('./HelloWorld');
+```
