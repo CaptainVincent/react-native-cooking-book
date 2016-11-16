@@ -62,7 +62,7 @@ class NormalText extends Component {
 
   render() {
     return (
-      <Text style={[this.props.style, fonts.normal, scaled.normal]}>
+      <Text style={[this.props.style, fonts.normal, scaled.normal]}> //覆寫 style 中的 fontSize
         {this.props.children}
       </Text>
       );
