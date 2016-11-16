@@ -29,3 +29,4 @@ RCT_EXPORT_METHOD(greeting:(NSString *)name)
 
 @end
 ```
+> Object-C 內以 greeting:name 方法命名包含到**參數名**, React Native 預設以到冒號前的作為 JavaScript 的方法名, 也可以另外使用 RCT_REMAP_METHOD 巨集來重新對應兩邊的方法名稱。
