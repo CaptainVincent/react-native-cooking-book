@@ -73,7 +73,7 @@ NormalText.propTypes = {
   style: Text.propTypes.style
 };
 
-const scaled = StyleSheet.create({
+const scaled = StyleSheet.create({ //
   normal: {
     fontSize: width / scalingFactors.normal
   }
