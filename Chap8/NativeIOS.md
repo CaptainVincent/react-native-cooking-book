@@ -13,7 +13,8 @@
 ### HelloWorld.m
 ```objc
 #import "HelloWorld.h"
-#import "RCTLog.h" //輸出 console 用
+//輸出 console 用
+#import "RCTLog.h" 
 
 @implementation HelloWorld
 
