@@ -51,3 +51,29 @@ Zebreto
     return <Decks/>;
   },
 ```
+
+```
+
+  review(deckID) {
+    DeckActions.reviewDeck(deckID);
+    this.refs.navigator.push({
+      name: 'review',
+      data: {
+        deckID: deckID
+      }
+    });
+  },
+
+  createdDeck(deck) {
+    this.refs.navigator.push({
+      name: 'createCards',
+      data: {
+        deck: deck
+      }
+    });
+  },
+
+  goHome() {
+    this.refs.navigator.popToTop();
+  },
+```
