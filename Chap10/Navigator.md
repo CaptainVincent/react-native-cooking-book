@@ -53,7 +53,6 @@ Zebreto
 ```
 
 ```
-
   review(deckID) {
     DeckActions.reviewDeck(deckID);
     this.refs.navigator.push({
