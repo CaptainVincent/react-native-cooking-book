@@ -12,6 +12,7 @@
 ```
 
 ### HelloWorld.m
+RCT_EXPORT_MODULE 是定義好的巨集負責將方法匯出給 javascript 使用
 ```objc
 #import "HelloWorld.h"
 //輸出 console 用
