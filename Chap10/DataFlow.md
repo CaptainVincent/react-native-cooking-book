@@ -29,7 +29,7 @@ Flux 的架構基本上可以視為一種抽象層的概念, 希望仍保有簡�
 
 ### Reflux
 Reflux 的設計則是省略了 Dispatcher 的角色, Store 直接 listern Action。
-> 筆者的觀點 Reflux 是仍舊保留 MVC 的架構, 但是要求資料流為單一方向, 所以更新父階層的狀態是透過發出 Action 來通知在 Listen 的元件, 而非把父階層的函式直接傳遞給子代直接做 callback。
+> 筆者的觀點 Reflux 是仍舊保留 MVC 的架構, 但是要求資料流為單一方向, 所以更新父階層的狀態是透過發出 Action 來通知有在 Listen 的元件, 而非把父階層的函式直接傳遞給子代直接做 callback。
 
 
 
