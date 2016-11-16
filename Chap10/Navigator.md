@@ -52,7 +52,7 @@ Zebreto
   },
 ```
 
-這邊定義的 function 用來處理 navigator 的動作, 以及拋出更新 Store 的動作。
+這邊定義的 function 用來處理 navigator 的交替動作, 以及拋出更新 Store 的動作。
 ```javascript
   review(deckID) {
     DeckActions.reviewDeck(deckID);
