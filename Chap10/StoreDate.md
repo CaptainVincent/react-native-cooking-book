@@ -10,7 +10,7 @@ Zebreto
 ```
  
 ### src/Store/Deck.js
-Focus 重點 _loadCards、_writeCards
+資料存放的重點在 _loadCards、_writeCards
 
 ```javascript
 import Card from './../data/Card';
