@@ -10,6 +10,8 @@ Zebreto
 ```
  
 ### src/Store/Deck.js
+Focus 重點 _loadCards、_writeCards
+
 ```javascript
 import Card from './../data/Card';
 import Reflux from 'reflux';
