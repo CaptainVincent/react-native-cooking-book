@@ -1,7 +1,6 @@
 # 資料存放
 Zebreto 是透過將 **資料模型** 的物件轉成 JSON 序列化後 (透過 **stringify**) 以 AsyncStorage 存放, 取出時 (透過 **parse**) 再用 map 展開陣列, 重新產生物件。
 
-
 ```
 Zebreto
 ./
