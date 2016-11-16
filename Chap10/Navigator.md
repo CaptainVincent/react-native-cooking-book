@@ -52,7 +52,7 @@ Zebreto
   },
 ```
 
-```
+```javascript
   review(deckID) {
     DeckActions.reviewDeck(deckID);
     this.refs.navigator.push({
