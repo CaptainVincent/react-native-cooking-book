@@ -9,6 +9,8 @@ Zebreto
 ```
 
 ### src/styles/fonts.js
+包含了字體的樣式, 與縮放的比例。
+
 ```javascript
 import { StyleSheet } from 'react-native';
 
