@@ -20,5 +20,5 @@ Flux 的架構基本上可以視為一種抽象層的概念, 希望仍保有簡�
 
 ![](mvc-Classic.png)
 
-**Flux 架構**
+**簡易 Flux 架構**
 ![](flux-simple.png)
