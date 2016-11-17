@@ -8,6 +8,7 @@
 
 ## 參考文獻
 O'Reilly React Native 學習手冊
+https://github.com/bonniee/learning-react-native
 
 ## 筆者聯絡方式
 Mail: [captainvincenttw@gmail.com](mailto:captainvincenttw@gmail.com)
